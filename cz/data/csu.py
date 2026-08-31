@@ -97,6 +97,7 @@ def build_query(
     casovy_posun: int = 0,
     pouzit_dimenze: Optional[List[str]] = None,
     vynechat_dimenze: Optional[List[str]] = None,
+    fixovat_dimenze: Optional[Dict[str, str]] = None,
 ) -> Dict[str, Any]:
     """Sestaví tělo POST /vlastni: vše do řádků, čas a ukazatele do filtru.
 
@@ -153,6 +154,16 @@ def build_query(
             "kodDimenze": "IndicatorType",
             "filtr": [{"zobrazitPolozky": list(ukazatele)}],
             "filtrTabulkyKod": ukazatele[0],
+        })
+
+    # Dimenze zafixované na jednu položku (typicky "0" = Celkem) — sada
+    # vyžaduje umístění právě jedné varianty od každého typu dimenze, ale
+    # ne každou chceme rozgenerovanou.
+    for kod, polozka in (fixovat_dimenze or {}).items():
+        filtry.append({
+            "kodDimenze": kod,
+            "filtr": [{"zobrazitPolozky": [polozka]}],
+            "filtrTabulkyKod": polozka,
         })
 
     if pouzit_dimenze is not None:

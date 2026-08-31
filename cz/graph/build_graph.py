@@ -1,0 +1,225 @@
+"""Builder CZ grafu (Fáze 2): upstream full_dag.json + snapshot → cz_dag.json.
+
+Transformace:
+- výměna priorů 8 jádrových uzlů za ČSÚ/Eurostat hodnoty (P1–P7),
+- výměna hodnotových sad `region` (77 okresů) a `primary_language` (CZ sada),
+- suspendace prvků grafu, které po změně přestávají platit:
+  * hrany/CPT/masky odkazující na změněné HODNOTY (region, primary_language)
+    — jejich CPD řádky jsou klíčované starými hodnotami; Fáze 3 je nahradí
+    CZ křížovými tabulkami,
+  * plné CPT CÍLÍCÍ na uzly se změněným priorem — světové overlaye by
+    deformovaly ČSÚ marginály.
+  Kompatibilní masky bez vazby na změněné hodnoty zůstávají (logická
+  konzistence, např. děti × vzdělání) — záměrně smí ohnout marginál.
+
+  uv run python -m cz.graph.build_graph [--snapshot snap-...]
+"""
+
+from __future__ import annotations
+
+import argparse
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+
+from cz.graph import priors
+
+REPO = Path(__file__).resolve().parents[2]
+UPSTREAM_GRAPH = REPO / "persona" / "synthesis" / "graph" / "full_dag.json"
+UPSTREAM_SCHEMA = REPO / "persona" / "schema" / "dimensions.json"
+OUT_DIR = Path(__file__).resolve().parent
+SNAPSHOTS = REPO / "cz" / "data" / "snapshots"
+
+VALUE_CHANGED = {"region", "primary_language"}
+PRIOR_ONLY = {
+    "age_bracket", "gender_identity", "highest_education", "urbanicity",
+    "demo_employment_status", "socioeconomic_band",
+}
+
+
+def latest_snapshot() -> str:
+    ids = sorted(p.name for p in SNAPSHOTS.iterdir() if (p / "manifest.json").exists())
+    for sid in reversed(ids):
+        if not json.loads((SNAPSHOTS / sid / "manifest.json").read_text()).get("partial"):
+            return sid
+    raise SystemExit("žádný kompletní snapshot — spusť cz.data.fetch")
+
+
+def main() -> None:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("--snapshot", default=None)
+    args = ap.parse_args()
+    sid = args.snapshot or latest_snapshot()
+    sdir = SNAPSHOTS / sid
+
+    dag = json.loads(UPSTREAM_GRAPH.read_text())
+    nodes = {n["id"]: n for n in dag["nodes"]}
+
+    # --- CZ priory -----------------------------------------------------------
+    vypocty = {
+        "region": priors.region_prior(sdir),
+        "age_bracket": priors.age_prior(sdir),
+        "gender_identity": priors.gender_prior(sdir, nodes["gender_identity"]["prior"]),
+        "highest_education": priors.education_prior(sdir, nodes["highest_education"]["values"]),
+        "urbanicity": priors.urbanicity_prior(sdir, nodes["urbanicity"]["values"]),
+        "primary_language": priors.language_prior(sdir),
+        "demo_employment_status": priors.employment_prior(sdir, nodes["demo_employment_status"]["values"]),
+        "socioeconomic_band": priors.socioeconomic_prior(sdir, nodes["socioeconomic_band"]["values"]),
+    }
+
+    report: dict = {"snapshot": sid, "nodes": {}, "suspended": {}}
+    for nid, (prior, prov) in vypocty.items():
+        n = nodes[nid]
+        stare_hodnoty = list(n["values"])
+        nove_hodnoty = list(prior.keys()) if nid in VALUE_CHANGED else stare_hodnoty
+        n["values"] = nove_hodnoty
+        n["values_list"] = nove_hodnoty
+        n["values_count"] = len(nove_hodnoty)
+        n["prior"] = {v: prior[v] for v in nove_hodnoty}
+        n["cz_provenance"] = prov
+        cpd = n.setdefault("cpd", {})
+        cpd["calibration"] = "cz_csu_v1"
+        report["nodes"][nid] = {
+            "values_changed": nid in VALUE_CHANGED,
+            "values_count": len(nove_hodnoty),
+            "prior": n["prior"],
+            "provenance": prov,
+        }
+    nodes["region"]["description"] = "Okres ČR, kde persona žije (77 jednotek LAU1 vč. Prahy)."
+    nodes["region"]["label"] = "Okres"
+
+    # --- suspendace ----------------------------------------------------------
+    def maska_koliduje(m: dict) -> bool:
+        if m.get("target") in VALUE_CHANGED:
+            return True
+        return any(k in VALUE_CHANGED for k in (m.get("condition") or {}))
+
+    def cpt_parents(c: dict) -> list[str]:
+        p = c.get("parents")
+        if isinstance(p, str):
+            try:
+                import ast
+                p = ast.literal_eval(p)
+            except (ValueError, SyntaxError):
+                p = [p]
+        return list(p or [])
+
+    edges_keep, edges_susp = [], []
+    for e in dag["directed_proposal_edges"]:
+        if e["source"] in VALUE_CHANGED or e["target"] in VALUE_CHANGED:
+            edges_susp.append({"edge_id": e.get("edge_id"), "source": e["source"],
+                               "target": e["target"], "reason": "hodnotova_sada_zmenena"})
+        else:
+            edges_keep.append(e)
+
+    cpts_keep, cpts_susp = [], []
+    for c in dag["full_cpts"]:
+        parents = cpt_parents(c)
+        if c.get("target") in VALUE_CHANGED or any(p in VALUE_CHANGED for p in parents):
+            cpts_susp.append({"cpt_id": c.get("cpt_id"), "reason": "hodnotova_sada_zmenena"})
+        elif c.get("target") in PRIOR_ONLY:
+            cpts_susp.append({"cpt_id": c.get("cpt_id"),
+                              "reason": "svetovy_overlay_na_cz_marginal"})
+        else:
+            cpts_keep.append(c)
+
+    masks_keep, masks_susp = [], []
+    cz_kalibrovane = VALUE_CHANGED | PRIOR_ONLY
+    for m in dag["conditional_masks"]:
+        if maska_koliduje(m):
+            masks_susp.append({"mask_id": m.get("mask_id"), "reason": "hodnotova_sada_zmenena"})
+        elif (m.get("target") in cz_kalibrovane
+              and set(m.get("condition") or {}) - {"age_bracket"}):
+            # Maska váže CZ-kalibrovaný uzel na světově kalibrované dimenze
+            # (domain, ses, …) tvrdou nulou → deformovala by ČSÚ marginál.
+            # Fáze 3 ji nahradí CZ křížovou tabulkou; věkové masky zůstávají.
+            masks_susp.append({"mask_id": m.get("mask_id"),
+                               "reason": "svetova_podminka_na_cz_marginal"})
+        else:
+            masks_keep.append(m)
+
+    dag["directed_proposal_edges"] = edges_keep
+    dag["full_cpts"] = cpts_keep
+    dag["conditional_masks"] = masks_keep
+    if "proposal_view" in dag:
+        dag["proposal_view"]["edge_count"] = len(edges_keep)
+
+    # --- CZ podmíněné tabulky: vzdělání|věk, status|věk (18+ řádky) ----------
+    topo = dag["proposal_view"]["topological_order"]
+    assert topo.index("age_bracket") < topo.index("highest_education")
+    assert topo.index("age_bracket") < topo.index("demo_employment_status")
+
+    cz_cpts = []
+    for target, (cond, cprov) in {
+        "highest_education": priors.education_by_age(sdir, nodes["highest_education"]["values"]),
+        "demo_employment_status": priors.employment_by_age(sdir, nodes["demo_employment_status"]["values"]),
+    }.items():
+        cz_cpts.append({
+            "cpt_id": f"cz_{target}_given_age_sldb2021",
+            "target": target,
+            "parents": ["age_bracket"],
+            "table_type": "weighted_full_cpt",
+            "source_refs": ["cz_snapshot:" + sid],
+            "cpt_weight": 1.0,
+            "replace_pairwise_parent_edges": True,
+            "smoothing": "none",
+            "rows": [{"parent_assignment": {"age_bracket": b}, "distribution": dist}
+                     for b, dist in cond.items()],
+            "notes": [cprov.get("pozn", "")],
+            "zero_semantics": "structural_zero_from_source",
+            "cz_provenance": cprov,
+        })
+        # referenční marginál 18+ pro check_marginals: vážený průměr řádků CPT
+        vek_prior = vypocty["age_bracket"][0]
+        vaha18 = {b: vek_prior[b] for b in cond}
+        s18 = sum(vaha18.values())
+        ref18 = {v: sum(vaha18[b] / s18 * cond[b].get(v, 0.0) for b in cond)
+                 for v in nodes[target]["values"]}
+        report["nodes"][target]["reference_18plus"] = ref18
+        report["nodes"][target]["conditional_on_age"] = {"rows": len(cond), "provenance": cprov}
+    dag["full_cpts"] = cpts_keep + cz_cpts
+
+    report["suspended"] = {
+        "edges": edges_susp, "full_cpts": cpts_susp, "masks": masks_susp,
+        "counts": {"edges": len(edges_susp), "full_cpts": len(cpts_susp), "masks": len(masks_susp)},
+    }
+
+    dag["metadata"]["cz"] = {
+        "version": "cz_v1_faze2_priors",
+        "snapshot_id": sid,
+        "built_at": datetime.now(timezone.utc).isoformat(),
+        "changed_nodes": sorted(vypocty.keys()),
+        "suspended_counts": report["suspended"]["counts"],
+        "note": "Fáze 2: CZ priory jádra; suspendované hrany/CPT/masky nahradí Fáze 3 CZ křížovými tabulkami.",
+    }
+    dag["metadata"]["name"] = "MatrAIx CZ Persona Graph — Fáze 2 (CZ priors)"
+
+    out_graph = OUT_DIR / "cz_dag.json"
+    out_graph.write_text(json.dumps(dag, ensure_ascii=False), encoding="utf-8")
+
+    # --- schéma dimenzí ------------------------------------------------------
+    schema = json.loads(UPSTREAM_SCHEMA.read_text())
+    for d in schema["dimensions"]:
+        if d["id"] in VALUE_CHANGED:
+            d["values"] = nodes[d["id"]]["values"]
+    for d in schema["dimensions"]:
+        if d["id"] == "region":
+            d["label"] = "Okres"
+            d["description"] = "Okres ČR, kde persona žije (77 jednotek LAU1 vč. Prahy)."
+            d["phrase"] = "living in the {value} district, Czechia"
+    (OUT_DIR.parent / "schema").mkdir(exist_ok=True)
+    (OUT_DIR.parent / "schema" / "dimensions.cz.json").write_text(
+        json.dumps(schema, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    (OUT_DIR / "build_report.json").write_text(
+        json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    c = report["suspended"]["counts"]
+    print(f"cz_dag.json: {len(dag['nodes'])} uzlů, {len(edges_keep)} hran "
+          f"(suspendováno {c['edges']} hran, {c['full_cpts']} CPT, {c['masks']} masek)")
+    print(f"snapshot: {sid}")
+    print(f"report: {OUT_DIR / 'build_report.json'}")
+
+
+if __name__ == "__main__":
+    main()

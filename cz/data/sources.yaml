@@ -85,6 +85,55 @@ csu:
       posledni_obdobi: 3
       pouzit_dimenze: []
 
+  # --- Fáze 2 doplňky ---
+
+  sld21a002_vzdelani_detail_kraj:
+    sada: SLD21A002
+    popis: Obyvatelstvo 15+ podle vzdělání podrobně (Vzdel1 — rozliší Bc/Mgr/PhD), kraje
+    provenience: CZ-official
+    cilove_dimenze: [highest_education]
+    query:
+      uzemni_uroven: KRAJ
+      ukazatele: ["3162SLDB15"]
+      posledni_obdobi: 1
+      pouzit_dimenze: [Vzdel1, POHL3]
+      fixovat_dimenze: {VEKSK5A: "0", VelSkObciOP1: "0"}
+
+  zamg07_delka_pracovni_doby:
+    sada: ZAMG07
+    popis: Zaměstnaní podle délky pracovní doby (VŠPS) — plný vs. částečný úvazek
+    provenience: CZ-official
+    cilove_dimenze: [demo_employment_status]
+    query:
+      uzemni_uroven: STAT
+      ukazatele: ["6285Z"]
+      posledni_obdobi: 1
+      pouzit_dimenze: [TYPPRACDO, POHL1]
+      fixovat_dimenze: {CZNACEMZDY: "A-S", CZISCO: "C", VEKVSPS: "410015799999000", UKONVZDEL: "0"}
+
+  sldzob14_postaveni_v_zamestnani:
+    sada: SLDZOB14
+    popis: Zaměstnaní podle postavení v zaměstnání (SLDB 2021) — podíl OSVČ/zaměstnavatelů
+    provenience: CZ-official
+    cilove_dimenze: [demo_employment_status]
+    query:
+      uzemni_uroven: KRAJ
+      ukazatele: ["3162Z"]
+      posledni_obdobi: 1
+      pouzit_dimenze: [POSTZAMWS, POHL3]
+
+  sld21a002_vzdelani_x_vek:
+    sada: SLD21A002
+    popis: Vzdělání podrobně × věk (SLDB 2021, 15+), ČR+kraje — podklad CPT vzdělání|věk
+    provenience: CZ-official
+    cilove_dimenze: [highest_education, age_bracket]
+    query:
+      uzemni_uroven: KRAJ
+      ukazatele: ["3162SLDB15"]
+      posledni_obdobi: 1
+      pouzit_dimenze: [Vzdel1, VEKSK5A]
+      fixovat_dimenze: {VelSkObciOP1: "0", POHL3: "0"}
+
 eurostat:
   demo_r_pjangrp3_cz:
     dataset: demo_r_pjangrp3
@@ -95,6 +144,17 @@ eurostat:
       geo: [CZ010, CZ020, CZ031, CZ032, CZ041, CZ042, CZ051, CZ052, CZ053, CZ063, CZ064, CZ071, CZ072, CZ080]
       lastTimePeriod: 1
 
+  ilc_di01_cz:
+    dataset: ilc_di01
+    popis: Rozdělení příjmů podle decilů (SILC), ČR — podklad pro socioekonomická pásma
+    provenience: CZ-official
+    cilove_dimenze: [socioeconomic_band]
+    filters:
+      geo: [CZ]
+      statinfo: [TC]
+      unit: [NAC]
+      lastTimePeriod: 1
+
   ilc_di04_cz:
     dataset: ilc_di04
     popis: Mediánový ekvivalizovaný příjem podle typu domácnosti (SILC), ČR
@@ -103,3 +163,4 @@ eurostat:
     filters:
       geo: [CZ]
       lastTimePeriod: 1
+
