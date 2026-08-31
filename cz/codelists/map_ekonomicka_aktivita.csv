@@ -1,0 +1,12 @@
+csu_kod,csu_nazev,schema_demo_employment_status,stav
+1,Zaměstnaní bez prac. důchodců/studentů/mateřské,Full-time,"ztrátové: FT/PT/gig nerozlišeno, rozpad přes VŠPS"
+2,Pracující důchodci,Retired,návrh: pracující důchodce ~ Retired s aktivitou
+3,Pracující žáci a studenti,Student,ok
+4,Osoby na mateřské dovolené,Homemaker,návrh
+52,Nezaměstnaní,Unemployed,ok
+6,Nepracující důchodci,Retired,ok
+7,Ostatní s vlastním zdrojem obživy,Homemaker,návrh
+8,"Žáci, studenti",Student,ok
+14,Osoby na rodičovské dovolené,Homemaker,návrh
+13,"Osoby v domácnosti, předškolní děti, závislé osoby",Homemaker,ztrátové: zahrnuje děti
+99,Nezjištěno,,null

@@ -1,0 +1,7 @@
+csu_kod,csu_nazev,isced,schema_highest_education,stav
+102,"Bez vzdělání, neúplné základní a základní",ISCED 0-2,Primary,ztrátové: slučuje No formal + Primary
+105,Střední vč. vyučení bez maturity,ISCED 3C,Vocational / cert,ok
+132,"Úplné střední s maturitou, nástavbové",ISCED 3A-4,Secondary,ok
+130,"Vyšší odborné, konzervatoř",ISCED 5,Associate's,ok
+109,Vysokoškolské,ISCED 6-8,Bachelor's,ztrátové: slučuje Bc/Mgr/PhD — rozpad přes Vzdel1 ve Fázi 2
+900,Nezjištěno,,,null

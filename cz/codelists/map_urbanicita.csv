@@ -1,0 +1,11 @@
+csu_kod,csu_nazev,schema_urbanicity,stav
+98,do 199 obyvatel,Rural,návrh
+99,200 - 499 obyvatel,Rural,návrh
+2,500 až 999 obyvatel,Rural,návrh
+3,1000 až 1999 obyvatel,Small town,návrh
+4,2000 až 4999 obyvatel,Small town,návrh
+5,5000 až 9999 obyvatel,Small town,návrh
+6,10000 až 19999 obyvatel,Small town,návrh
+7,20000 až 49999 obyvatel,Suburban,"návrh: CZ nemá suburb koncept, aproximace střední město"
+8,50000 až 99999 obyvatel,Suburban,návrh
+9,100000 a více obyvatel,Dense urban,návrh

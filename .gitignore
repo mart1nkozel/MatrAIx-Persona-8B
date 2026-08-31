@@ -315,3 +315,6 @@ environment/runtime/harbor/viewer/static/assets/*.map
 **/.playground_sidecar/
 site/
 .cache/
+
+# CZ layer — snapshoty zdrojových dat (data, ne kód)
+cz/data/snapshots/

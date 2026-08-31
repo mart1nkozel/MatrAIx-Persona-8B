@@ -1,0 +1,15 @@
+nuts3_kod,nazev,nuts2_kod,nuts2_nazev
+CZ010,Hlavní město Praha,CZ01,Praha
+CZ020,Středočeský kraj,CZ02,Střední Čechy
+CZ031,Jihočeský kraj,CZ03,Jihozápad
+CZ032,Plzeňský kraj,CZ03,Jihozápad
+CZ041,Karlovarský kraj,CZ04,Severozápad
+CZ042,Ústecký kraj,CZ04,Severozápad
+CZ051,Liberecký kraj,CZ05,Severovýchod
+CZ052,Královéhradecký kraj,CZ05,Severovýchod
+CZ053,Pardubický kraj,CZ05,Severovýchod
+CZ063,Kraj Vysočina,CZ06,Jihovýchod
+CZ064,Jihomoravský kraj,CZ06,Jihovýchod
+CZ071,Olomoucký kraj,CZ07,Střední Morava
+CZ072,Zlínský kraj,CZ07,Střední Morava
+CZ080,Moravskoslezský kraj,CZ08,Moravskoslezsko

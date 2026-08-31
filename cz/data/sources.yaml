@@ -1,0 +1,105 @@
+# Registr zdrojových datasetů pro CZ vrstvu — demografické jádro (Fáze 1).
+#
+# Každý zdroj má provenience kategorii (CZ-official / CZ-survey) a cílové
+# dimenze schématu, které bude ve Fázi 2+ sytit. Dotazy staví
+# cz.data.csu.build_query — parametry zde odpovídají jeho argumentům.
+#
+# Licence (D10): ČSÚ otevřená data — CC BY 4.0 (uvádět zdroj).
+# Eurostat — reuse povolen s uvedením zdroje (rozhodnutí Komise 2011/833/EU).
+
+csu:
+  oby02b_vek_pohlavi_okres:
+    sada: OBY02B
+    popis: Počet obyvatel podle pohlaví a jednotek věku, okresy
+    provenience: CZ-official
+    cilove_dimenze: [age_bracket, gender_identity, region]
+    query:
+      uzemni_varianta: Uz0123h2   # hierarchická (stát+region+kraj+okres) — čistá okresní varianta nemá Prahu (je krajem)
+      ukazatele: ["2406P"]        # k 1. 1. (počáteční stav) — jediný stav dostupný i pro poslední rok
+      posledni_obdobi: 2          # poslední rok mívá jen agregát; plné jednotky věku nese rok předtím
+      pouzit_dimenze: [VEK1C, POHL2]
+
+  sld21a002_vzdelani_vek_urbanicita_kraj:
+    sada: SLD21A002
+    popis: Obyvatelstvo 15+ podle vzdělání, věku, pohlaví a velikostních skupin obcí (SLDB 2021), kraje
+    provenience: CZ-official
+    cilove_dimenze: [highest_education, age_bracket, gender_identity, urbanicity, region]
+    query:
+      uzemni_uroven: KRAJ
+      ukazatele: ["3162SLDB15"]
+      posledni_obdobi: 1
+      pouzit_dimenze: [Vzdel5, VEKSK5A, POHL3, VelSkObciOP1]
+
+  sld032_domacnosti_kraj:
+    sada: SLD032
+    popis: Hospodařící domácnosti podle typu a počtu členů (SLDB 2021), kraje
+    provenience: CZ-official
+    cilove_dimenze: [demo_children_count, demo_living_situation]
+    query:
+      uzemni_uroven: KRAJ
+      ukazatele: ["U_2423"]
+      posledni_obdobi: 1
+      pouzit_dimenze: [TYPHDAWS, POCCLENDOMWS]
+
+  sld007_matersky_jazyk_kraj:
+    sada: SLD007
+    popis: Obyvatelstvo podle mateřského jazyka (SLDB 2021), kraje
+    provenience: CZ-official
+    cilove_dimenze: [primary_language, lang_czech, multilingualism]
+    query:
+      uzemni_uroven: KRAJ
+      ukazatele: ["U_3162"]
+      posledni_obdobi: 1
+      pouzit_dimenze: [MatJaz2, POHL1]
+
+  sld21a047_ekonomicka_aktivita_kraj:
+    sada: SLD21A047
+    popis: Obyvatelstvo podle ekonomické aktivity, věku a pohlaví (SLDB 2021), kraje
+    provenience: CZ-official
+    cilove_dimenze: [demo_employment_status, age_bracket, gender_identity]
+    query:
+      uzemni_uroven: KRAJ
+      ukazatele: ["3162SLDB"]
+      posledni_obdobi: 1
+      pouzit_dimenze: [VekSk5, POHL3, EKONAKTIV2H]
+
+  nez01_nezamestnanost_okres:
+    sada: NEZ01
+    popis: Registrovaná nezaměstnanost, okresy (vč. Prahy — 77 jednotek)
+    provenience: CZ-official
+    cilove_dimenze: [demo_employment_status, region]
+    query:
+      uzemni_uroven: OKRES
+      ukazatele: ["5973", "5973DI"]
+      posledni_obdobi: 1
+      pouzit_dimenze: []
+
+  porkr11_prijem_kraj:
+    sada: PORKR11
+    popis: Čistý disponibilní důchod domácností na 1 obyvatele, kraje
+    provenience: CZ-official
+    cilove_dimenze: [socioeconomic_band, region]
+    query:
+      uzemni_uroven: KRAJ
+      ukazatele: ["10033J01"]
+      posledni_obdobi: 3
+      pouzit_dimenze: []
+
+eurostat:
+  demo_r_pjangrp3_cz:
+    dataset: demo_r_pjangrp3
+    popis: Obyvatelstvo podle věkových skupin a pohlaví, NUTS3 (křížová validace ČSÚ dat)
+    provenience: CZ-official
+    cilove_dimenze: [age_bracket, gender_identity, region]
+    filters:
+      geo: [CZ010, CZ020, CZ031, CZ032, CZ041, CZ042, CZ051, CZ052, CZ053, CZ063, CZ064, CZ071, CZ072, CZ080]
+      lastTimePeriod: 1
+
+  ilc_di04_cz:
+    dataset: ilc_di04
+    popis: Mediánový ekvivalizovaný příjem podle typu domácnosti (SILC), ČR
+    provenience: CZ-official
+    cilove_dimenze: [socioeconomic_band]
+    filters:
+      geo: [CZ]
+      lastTimePeriod: 1
