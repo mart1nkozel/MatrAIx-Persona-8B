@@ -318,3 +318,8 @@ site/
 
 # CZ layer — snapshoty zdrojových dat (data, ne kód)
 cz/data/snapshots/
+cz/graph/cz_dag.json
+cz/graph/build_report.json
+cz/schema/dimensions.cz.json
+cz/data/ess_user.json
+cz/graph/provenance_registry.csv

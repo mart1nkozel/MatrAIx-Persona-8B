@@ -164,3 +164,15 @@ eurostat:
       geo: [CZ]
       lastTimePeriod: 1
 
+
+ess:
+  ess10_cz:
+    doi: "10.21338/ess10e03_2"
+    popis: ESS Round 10 (2020/21), integrovaný soubor ed. 3.2 — CZ podvzorek (2 476 respondentů, F2F)
+    provenience: CZ-survey
+    cntry: CZ
+    pozn: >
+      ČR v ESS11 (2023) není — poslední česká účast je R10. Health modul
+      "Social inequalities in health" z R11 tedy pro ČR chybí; jádrové
+      health/wellbeing položky (health, hlthhmp, stflife, happy) jsou v R10.
+      Licence ESS: CC BY-NC-SA 4.0 (nekomerční užití).

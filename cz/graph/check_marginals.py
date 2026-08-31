@@ -24,6 +24,14 @@ DOSPELI_18 = {"18-24", "25-34", "35-44", "45-54", "55-64", "65-74", "75-84", "85
 JEN_DOSPELI = {"highest_education", "demo_employment_status"}
 
 
+def _jen_dospeli(nid: str, info: dict) -> bool:
+    """ESS reference jsou měřené na populaci 15+ — srovnávat subpopulaci 18+."""
+    if nid in JEN_DOSPELI:
+        return True
+    zdroj = str((info.get("provenance") or {}).get("zdroj", ""))
+    return zdroj.startswith("ess10")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("sample", type=Path)
@@ -39,7 +47,8 @@ def main() -> int:
         # Uzly podmíněné věkem se srovnávají proti očekávanému marginálu 18+
         # (vážený průměr CPT řádků věkovým priorem), ostatní proti prioru.
         ref = info.get("reference_18plus") or info["prior"]
-        zdroj = recs if nid not in JEN_DOSPELI else [r for r in recs if r["age_bracket"] in DOSPELI_18]
+        dospeli = _jen_dospeli(nid, info)
+        zdroj = [r for r in recs if r["age_bracket"] in DOSPELI_18] if dospeli else recs
         cnt = Counter(r[nid] for r in zdroj)
         m = len(zdroj)
         max_diff, max_kat = 0.0, ""
@@ -51,7 +60,7 @@ def main() -> int:
         navic = set(cnt) - set(ref)
         ok = max_diff <= TOLERANCE_PB and not navic
         celkove_ok &= ok
-        pozn = " [18+]" if nid in JEN_DOSPELI else ""
+        pozn = " [18+]" if dospeli else ""
         print(f"{'OK ' if ok else 'FAIL'} {nid}{pozn}: max |Δ| = {max_diff:.2f} p.b. ({max_kat})"
               + (f"; hodnoty mimo referenci: {navic}" if navic else ""))
         if not ok and max_diff > TOLERANCE_PB:

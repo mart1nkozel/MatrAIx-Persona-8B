@@ -324,6 +324,95 @@ def main() -> None:
     })
     dag["conditional_masks"] = masks_keep + cz_lang_masky
 
+    # ====================== Fáze 4: postojové dimenze z ESS ==================
+    from cz.graph import ess_mapping
+    schema_values = {n["id"]: n["values"] for n in dag["nodes"]}
+    ess_res = ess_mapping.build_ess_priors(
+        sdir, schema_values, nodes["demo_disability_status"]["prior"])
+
+    ess_dims = set(ess_res)
+    # světové in-hrany a CPT na CZ-survey kalibrované uzly pryč (jinak by
+    # deformovaly ESS marginály) — masky zůstávají (logická konzistence)
+    edges_keep2 = []
+    for e in dag["directed_proposal_edges"]:
+        if e["target"] in ess_dims:
+            edges_susp.append({"edge_id": e.get("edge_id"), "source": e["source"],
+                               "target": e["target"], "reason": "svetovy_prior_na_cz_survey",
+                               "rozhodnuti": "nahrazeno_ess_priorem_faze4"})
+        else:
+            edges_keep2.append(e)
+    dag["directed_proposal_edges"] = edges_keep2
+    cpts_keep2 = []
+    for c in dag["full_cpts"]:
+        if c.get("target") in ess_dims and not str(c.get("cpt_id", "")).startswith("cz_"):
+            cpts_susp.append({"cpt_id": c.get("cpt_id"), "reason": "svetovy_overlay_na_cz_survey"})
+        else:
+            cpts_keep2.append(c)
+    dag["full_cpts"] = cpts_keep2
+
+    kraj_prior_map = cz_kraj["prior"]
+    for dim, info in ess_res.items():
+        n = nodes[dim]
+        n["prior"] = {v: info["prior"].get(v, 0.0) for v in n["values"]}
+        n["cz_provenance"] = info["provenance"]
+        n.setdefault("cpd", {})["calibration"] = "cz_ess10_v1"
+        ref = n["prior"]
+        if info.get("cond"):
+            cond_parent = info["cond"]["parent"]
+            cond_a = info["cond"]["rows"]
+            assert topo.index(cond_parent) < topo.index(dim), \
+                f"{cond_parent} musí předcházet {dim} v topologickém pořadí"
+            dag["full_cpts"].append({
+                "cpt_id": f"cz_{dim}_given_{cond_parent}_ess10",
+                "target": dim,
+                "parents": [cond_parent],
+                "table_type": "weighted_full_cpt",
+                "source_refs": ["ess10:joint"],
+                "cpt_weight": 1.0,
+                "replace_pairwise_parent_edges": True,
+                "rows": [{"parent_assignment": {cond_parent: a},
+                          "distribution": {v: p for v, p in dist.items() if p > 0}}
+                         for a, dist in cond_a.items()],
+                "notes": [info["provenance"].get("pozn", "")],
+                "zero_semantics": "survey_zero",
+                "cz_provenance": info["provenance"],
+            })
+            # referenční marginál: složení přes afiliační prior; afiliace bez
+            # CPT řádku (n<30) padají v sampleru na prior uzlu — stejně v ref
+            aff_prior = ess_res[cond_parent]["prior"] if cond_parent in ess_res \
+                else nodes[cond_parent]["prior"]
+            ref = {v: sum(p_a * cond_a.get(a, info["prior"]).get(v, 0.0)
+                          for a, p_a in aff_prior.items())
+                   for v in n["values"]}
+        if info["cond_kraj"]:
+            dag["full_cpts"].append({
+                "cpt_id": f"cz_{dim}_given_kraj_ess10",
+                "target": dim,
+                "parents": ["cz_kraj"],
+                "table_type": "weighted_full_cpt",
+                "source_refs": ["ess10:" + info["provenance"]["zdroj"].split(":", 1)[1]],
+                "cpt_weight": 1.0,
+                "replace_pairwise_parent_edges": True,
+                "rows": [{"parent_assignment": {"cz_kraj": k},
+                          "distribution": {v: p for v, p in dist.items() if p > 0}}
+                         for k, dist in info["cond_kraj"].items()],
+                "notes": [info["provenance"].get("pozn", "")],
+                "zero_semantics": "survey_zero",
+                "cz_provenance": info["provenance"],
+            })
+            ref = {v: sum(kraj_prior_map[k] * info["cond_kraj"][k].get(v, 0.0)
+                          for k in info["cond_kraj"]) for v in n["values"]}
+        report["nodes"][dim] = {
+            "values_changed": False,
+            "values_count": len(n["values"]),
+            "prior": ref,
+            "provenance": info["provenance"],
+            "conditional_on_kraj": bool(info["cond_kraj"]),
+        }
+        if info["cond_kraj"]:
+            assert topo.index(dim) > topo.index("cz_kraj"), \
+                f"{dim} předchází cz_kraj v topologickém pořadí — CPT by se tiše zahodilo"
+
     # --- G11/G12: developer dimenze skryté (emit:false) ----------------------
     skryte = []
     for n in dag["nodes"]:
@@ -362,7 +451,7 @@ def main() -> None:
     }
 
     dag["metadata"]["cz"] = {
-        "version": "cz_v1_faze3_graf",
+        "version": "cz_v1_faze4_postoje",
         "snapshot_id": sid,
         "built_at": datetime.now(timezone.utc).isoformat(),
         "changed_nodes": sorted(vypocty.keys()),
@@ -397,6 +486,39 @@ def main() -> None:
     (OUT_DIR.parent / "schema").mkdir(exist_ok=True)
     (OUT_DIR.parent / "schema" / "dimensions.cz.json").write_text(
         json.dumps(schema, ensure_ascii=False, indent=1), encoding="utf-8")
+
+    # --- S5: registr provenience všech dimenzí -------------------------------
+    import csv as _csv
+    cz_official = set(vypocty) | {"cz_kraj", "urbanicity"}
+    with (OUT_DIR / "provenance_registry.csv").open("w", encoding="utf-8", newline="") as f:
+        wtr = _csv.writer(f)
+        wtr.writerow(["dim_id", "category", "emitovano", "provenience", "zdroj"])
+        for n in sorted(dag["nodes"], key=lambda x: x.get("index", 0)):
+            nid = n["id"]
+            if n.get("emit") is False:
+                typ = ("hidden-by-decision" if (n.get("cz_provenance", {}).get("evidence")
+                                                == "hidden_by_decision") else "latent")
+                zdroj = ""
+            elif nid in ess_dims:
+                typ, zdroj = "CZ-survey", ess_res[nid]["provenance"]["zdroj"]
+            elif nid in cz_official:
+                typ = "CZ-official"
+                zdroj = str((report["nodes"].get(nid, {}).get("provenance") or {}).get("zdroj", ""))
+            else:
+                typ, zdroj = "world-default", "upstream (neověřeno pro ČR)"
+            wtr.writerow([nid, n.get("category", ""), n.get("emit") is not False, typ, zdroj])
+    from collections import Counter as _Counter
+    typy = _Counter()
+    for n in dag["nodes"]:
+        if n.get("emit") is False:
+            typy["hidden/latent"] += 1
+        elif n["id"] in ess_dims:
+            typy["CZ-survey"] += 1
+        elif n["id"] in cz_official:
+            typy["CZ-official"] += 1
+        else:
+            typy["world-default"] += 1
+    report["provenance_summary"] = dict(typy)
 
     (OUT_DIR / "build_report.json").write_text(
         json.dumps(report, ensure_ascii=False, indent=1), encoding="utf-8")

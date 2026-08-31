@@ -14,7 +14,7 @@ from pathlib import Path
 
 import yaml
 
-from cz.data import csu, eurostat
+from cz.data import csu, ess, eurostat
 from cz.data.snapshots import SnapshotStore, query_hash
 
 SOURCES_PATH = Path(__file__).resolve().parent / "sources.yaml"
@@ -98,6 +98,42 @@ def main() -> int:
             content=json.dumps(data, ensure_ascii=False), cache_key=cache_key, meta=meta,
         )
         print(f"→ staženo ({len(data.get('value', {}))} hodnot)")
+
+
+    for source_id, src in (registry.get("ess") or {}).items():
+        if not chci(source_id):
+            continue
+        cache_key = f"ess:{src['doi']}:{src.get('cntry','ALL')}"
+        print(f"[ess] {source_id}: {src['doi']}", end=" ")
+        if args.dry_run:
+            print(f"(dry-run, cache_key={cache_key})")
+            continue
+        meta = {"zdroj": "ess-sikt", "doi": src["doi"], "popis": src.get("popis"),
+                "provenience": src.get("provenience"), "cntry": src.get("cntry"),
+                "pozn": src.get("pozn")}
+        cached = writer.cached(source_id, cache_key)
+        if cached is not None:
+            import shutil as _sh
+            cil = writer.dir / f"{source_id}.parquet"
+            _sh.copyfile(cached, cil)
+            writer.sources[source_id] = {**meta, "file": f"{source_id}.parquet",
+                                         "cache_key": cache_key, "origin": "cache",
+                                         "bytes": cil.stat().st_size}
+            print("→ cache")
+            continue
+        try:
+            data = ess.download_country_subset(src["doi"], src.get("cntry", "CZ"))
+        except ess.EssApiError as e:
+            chyby[source_id] = str(e)
+            print(f"→ CHYBA: {e}")
+            continue
+        cil = writer.dir / f"{source_id}.parquet"
+        cil.write_bytes(data)
+        from cz.data.snapshots import file_sha256
+        writer.sources[source_id] = {**meta, "file": f"{source_id}.parquet",
+                                     "cache_key": cache_key, "origin": "download",
+                                     "bytes": len(data), "sha256": file_sha256(cil)}
+        print(f"→ staženo ({len(data)} B)")
 
     if args.dry_run:
         return 0
