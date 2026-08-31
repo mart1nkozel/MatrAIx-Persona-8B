@@ -380,3 +380,39 @@ def employment_by_age(snapshot_dir: Path, hodnoty: list[str]) -> Tuple[Dict[str,
                 "Gig/freelance=0; brackety <18 bez CPT řádku",
         "self_share": round(self_share, 4), "ft_share": round(ft_share, 4),
     }
+
+
+# --------------------------------------------- G6: kraj vrstva a urbanicita|kraj
+
+def kraje_codelist() -> list[dict]:
+    with (CZ_ROOT / "codelists" / "kraje.csv").open(encoding="utf-8") as f:
+        return list(csv.DictReader(f))
+
+
+def okres_do_kraje() -> Dict[str, str]:
+    """Mapa název okresu -> název kraje (deterministická, z číselníků)."""
+    kraj_nazvy = {k["nuts3_kod"]: k["nazev"] for k in kraje_codelist()}
+    return {o["nazev"]: kraj_nazvy[o["kraj_nuts3"]] for o in okresy_codelist()}
+
+
+def urbanicity_by_kraj(snapshot_dir: Path, hodnoty: list[str]) -> Tuple[Dict[str, Prior], Prov]:
+    """P(urbanicita | kraj) z velikostních skupin obcí (SLDB 2021, 15+)."""
+    rows = _rows(snapshot_dir, "sld21a002_vzdelani_vek_urbanicita_kraj")
+    kraj_nazvy = {k["nuts3_kod"]: k["nazev"] for k in kraje_codelist()}
+    acc: Dict[str, Prior] = {n: {h: 0.0 for h in hodnoty} for n in kraj_nazvy.values()}
+    for r in rows:
+        kod = r["Uz02.Polozka"]
+        if kod not in kraj_nazvy:
+            continue
+        if (r["POHL3.Polozka"] != "0" or r["Vzdel5.Polozka"] != "0"
+                or r["VEKSK5A.Polozka"] != "0" or r["VelSkObciOP1.Polozka"] == "0"):
+            continue
+        cil = MAP_VELSK.get(r["VelSkObciOP1.Polozka"])
+        if cil and r["Hodnota"]:
+            acc[kraj_nazvy[kod]][cil] += float(r["Hodnota"])
+    return {k: _norm(p) for k, p in acc.items()}, {
+        "zdroj": "csu:SLD21A002 VelSkObciOP1×kraj (SLDB 2021, 15+)", "evidence": "raw_direct",
+        "pozn": "G6 smíšená granularita: urbanicita podmíněna krajem (přes uzel cz_kraj), "
+                "ne okresem — dvě persony ze stejného kraje a jiného okresu mají "
+                "identickou distribuci urbanicity (G7)",
+    }
