@@ -51,6 +51,21 @@ def cz_issues(sample: dict, o2k: dict) -> list[str]:
     return out
 
 
+def spocitej(graph: Path, n: int, seed: int) -> tuple[Counter, Counter]:
+    sampler = PersonaForwardSampler(graph, SamplingConfig(seed=seed))
+    idx = sampler.sample_indices(n)
+    o2k = priors.okres_do_kraje()
+    upstream = Counter()
+    cz = Counter()
+    for i in range(n):
+        s = sampler.decode_row(idx, i)
+        for issue in consistency_issues(s):
+            upstream[issue["rule"]] += 1
+        for msg in cz_issues(s, o2k):
+            cz[msg.split(" ", 1)[0]] += 1
+    return upstream, cz
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--graph", default=str(Path(__file__).parent / "cz_dag.json"))
@@ -58,18 +73,7 @@ def main() -> int:
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
 
-    sampler = PersonaForwardSampler(Path(args.graph), SamplingConfig(seed=args.seed))
-    idx = sampler.sample_indices(args.n)
-    o2k = priors.okres_do_kraje()
-
-    upstream = Counter()
-    cz = Counter()
-    for i in range(args.n):
-        s = sampler.decode_row(idx, i)
-        for issue in consistency_issues(s):
-            upstream[issue["rule"]] += 1
-        for msg in cz_issues(s, o2k):
-            cz[msg.split(" ", 1)[0]] += 1
+    upstream, cz = spocitej(Path(args.graph), args.n, args.seed)
 
     print(f"vzorek: {args.n:,} person\n")
     print("upstream pravidla (hard/soft rozpory):")

@@ -32,16 +32,9 @@ def _jen_dospeli(nid: str, info: dict) -> bool:
     return zdroj.startswith(("ess10", "gesis:"))
 
 
-def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("sample", type=Path)
-    args = ap.parse_args()
-
-    report = json.loads((OUT_DIR / "build_report.json").read_text())
-    recs = [json.loads(l) for l in args.sample.open(encoding="utf-8")]
-    n = len(recs)
-    print(f"vzorek: {n:,} person | snapshot: {report['snapshot']} | tolerance ±{TOLERANCE_PB} p.b.\n")
-
+def zkontroluj(recs: list, report: dict, tichy: bool = False) -> tuple[list, bool]:
+    """Vrátí (výsledky per uzel, celkove_ok). Jádro V1 kontroly."""
+    vysledky = []
     celkove_ok = True
     for nid, info in report["nodes"].items():
         # Uzly podmíněné věkem se srovnávají proti očekávanému marginálu 18+
@@ -61,14 +54,28 @@ def main() -> int:
         ok = max_diff <= TOLERANCE_PB and not navic
         celkove_ok &= ok
         pozn = " [18+]" if dospeli else ""
-        print(f"{'OK ' if ok else 'FAIL'} {nid}{pozn}: max |Δ| = {max_diff:.2f} p.b. ({max_kat})"
-              + (f"; hodnoty mimo referenci: {navic}" if navic else ""))
-        if not ok and max_diff > TOLERANCE_PB:
-            for kat, p_ref in sorted(ref.items(), key=lambda kv: -kv[1])[:12]:
-                p_obs = cnt.get(kat, 0) / m
-                flag = " <<<" if abs(p_obs - p_ref) * 100 > TOLERANCE_PB else ""
-                print(f"      {kat}: ref {p_ref*100:6.2f} % vs. vzorek {p_obs*100:6.2f} %{flag}")
+        vysledky.append({"uzel": nid, "ok": ok, "max_diff_pb": round(max_diff, 3),
+                         "kategorie": max_kat, "subpopulace_18plus": dospeli})
+        if not tichy:
+            print(f"{'OK ' if ok else 'FAIL'} {nid}{pozn}: max |Δ| = {max_diff:.2f} p.b. ({max_kat})"
+                  + (f"; hodnoty mimo referenci: {navic}" if navic else ""))
+            if not ok and max_diff > TOLERANCE_PB:
+                for kat, p_ref in sorted(ref.items(), key=lambda kv: -kv[1])[:12]:
+                    p_obs = cnt.get(kat, 0) / m
+                    flag = " <<<" if abs(p_obs - p_ref) * 100 > TOLERANCE_PB else ""
+                    print(f"      {kat}: ref {p_ref*100:6.2f} % vs. vzorek {p_obs*100:6.2f} %{flag}")
+    return vysledky, celkove_ok
 
+
+def main() -> int:
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("sample", type=Path)
+    args = ap.parse_args()
+
+    report = json.loads((OUT_DIR / "build_report.json").read_text())
+    recs = [json.loads(l) for l in args.sample.open(encoding="utf-8")]
+    print(f"vzorek: {len(recs):,} person | snapshot: {report['snapshot']} | tolerance ±{TOLERANCE_PB} p.b.\n")
+    _, celkove_ok = zkontroluj(recs, report)
     print("\nVÝSLEDEK:", "PASS — marginály odpovídají ČSÚ v rámci tolerance" if celkove_ok else "FAIL")
     return 0 if celkove_ok else 1
 

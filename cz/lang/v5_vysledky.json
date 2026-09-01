@@ -1,0 +1,1213 @@
+[
+ {
+  "persona": 0,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Dobrý den, jmenuji se... no, řekněme, že jsem Petr, je mi něco kolem padesáti, žiju tady na okrese Česká Lípa, na předměstí menšího městečka. Podnikám na vlastní triko, jsem OSVČ už dobrých pár let, takže si trochu umím spočítat, co se vyplatí a co ne.\n\nJinak jsem takový všeuměl - baví mě spousta věcí najednou. Ráda pozoruju ptáky, když má čas, poslouchám podcasty, snad ke všem tématům co existují, a večer si rád dám dobré víno. Taky občas piju čaj, peču, jednou za čas si zajedu na motorce, protože to mě fakt nabíjí energií.\n\nJsem takový ten typ, co má rád klid a jistotu, ale zároveň se nebojím nových věcí - třeba technologie mě baví, sleduju co nového přichází, i ta umělá inteligence mě zajímá, myslím si, že to může být fajn pomocník. Dobrovolničím, když můžu, pomáhám lidem kolem sebe, to je pro mě důležité.\n\nPoliticky bych se řekl spíš na pravici, ale k volbám nechod",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď je konzistentní s profilem (OSVČ, energický extrovert, technické zájem, dobrovolnictví, víno, podcasty), ale chybí úplné vyjádření politického postoje a není zmíněna vysoká konformita, kterou profil indikuje."
+ },
+ {
+  "persona": 0,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Jsem Petr, mám 49 let a žiju na Českolipsku. Pracuju jako OSVČ — hlavně se věnuju tomu, aby mi to přineslo nějaké to příjmo a zároveň abych měl čas na věci, kterých si opravdu užívám.\n\nKdyž nemám zrovna práci, tak se rád zabývám různýma věcema. Koukám hodně na YouTube, teď mám vášeň na podcasty — doslova poslouchám skoro pořád. Zajímá mě technika, to mě táhne, a pak takhle v poklidu si užívám života — ať je to víno, dobrovolnictví, ou nejraději pozorování ptáků. To mě fascinuje, vážně.\n\nMám rád motorky, vždycky jsem se nimi bavil, a s rodinou se snažím trávit čas smysluplně. Tancuju, koukám na divadlo... no, prostě se snažím žít tak, aby to mělo nějaký smysl a aby to bylo zajímavý.\n\nTechnologie mě neděsí — mám s ní dobrý vztah. A když se podívám na svět, tak si myslím, že bychom si měli víc naslouchat, chodit si vstříc. Nejsem věřící, spíš pragmatik, ale ocením, když má věci hlavu a patu.\n\nCo tě zajímá? Jsem docela otevřený na různé věci.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně reflektuje profil: OSVČ s fokusu na vyvážení práce a osobních zájmů, vysoké zapojení do podcastů a YouTube, nadšení pro technologie, pozorování ptáků, víno a dobrovolnictví, pragmatický ateista, extrovert s vysokou energií a otevřeností vůči imigrantům."
+ },
+ {
+  "persona": 0,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi popisují stejnou osobu Petra, OSVČ z Českolipska, s podobnými zájmy (podcasty, víno, motorky, pozorování ptáků) a hodnotami klidu a jistoty."
+ },
+ {
+  "persona": 0,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Podle mě je to spíš přínos než problém, i když chápu, že spousta lidí to tady vidí jinak. Máme demografický problém, chybí nám ruce do práce, a lidi, co k nám přijdou a chtějí tady žít slušně a zapadnout, jim bych dal šanci. Samozřejmě to musí mít nějaká pravidla a řád, to je jasné, ale ta paušální nedůvěra ke všem cizincům mi přijde přehnaná. Znám i osobně pár lidí, co přišli odjinud a jsou to naprosto v pořádku sousedi, kolegové, kamarádi.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá profilovému postoji 'Nadšený příznivec imigrace' i hodnotám benevolence a univerzalismu."
+ },
+ {
+  "persona": 0,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "No, já na to koukám spíš pozitivně, musím říct. Myslím si, že když sem lidi přijdou, chtějí pracovat a něco si vybudovat, tak proč ne? Samozřejmě by to mělo být regulované, aby to fungovalo rozumně, ale úplně mi nevadí, když se sem nastěhují cizinci. \n\nOsobně si myslím, že nás to spíš oživuje, než aby nám to dělalo problémy. A tady na Česká Lípě vidím, že se to zvládá docela OK. Každý chce žít v poklidu a vyživit svou rodinu, ne?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odráží nadšený proimigrační postoj, benevolenci a univerzalismus profilu při zachování mírné regulace typické pro konformní hodnoty."
+ },
+ {
+  "persona": 0,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují pozitivní postoj k imigraci s podmínkou regulace a zdůrazňují přínos pracovitých cizinců."
+ },
+ {
+  "persona": 0,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Jasně, používám je, a řekl bych, že docela pravidelně. Podnikám na vlastní triko, tak potřebuju být efektivní a AI mi v tom hodně pomáhá.\n\nKonkrétně třeba na psaní - mám dyslexii, takže mi dělá dobře, když si můžu text nechat zkontrolovat nebo přeformulovat, aby to vypadalo profesionálně, když píšu nabídky klientům nebo odpovídám na emaily. Dřív jsem se s tím trápil sám a bál se chyb, teď to jde rychleji a s menším stresem.\n\nPoužívám to i na vyhledávání informací, když třeba řeším něco kolem nemovitostí nebo potřebuju rychle pochopit nějaké téma, na které nemám čas se hrabat v deseti článcích. AI mi to shrne a já si to pak ověřím.\n\nPoslouchám i podcasty o technologiích, takže sleduju, jak se to všechno vyvíjí, a musím říct, že mě to fascinuje. Nejsem typ, co se bojí, že mu robot vezme práci - beru to jako nástroj, který mi ušetří č",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá profilu – OSVČ, dyslexie, pozitivní postoj k AI, zájem o technologie a podcasty i nemovitosti."
+ },
+ {
+  "persona": 0,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Víš, já se k tomu stavím docela pragmaticky. Jako dělník na vlastný účet musím hlídat čas i peníze, takže jo, občas používám AI – prostě když mi to ušetří energii na věci, které mě víc baví.\n\nMáme třeba v práci věci, kde mi GPT pomůže zorganizovat myšlenky nebo napsat email, když jsem při tom někde jinde hlavou. Teda, jsem dyslektik, takže někdy si nechám pomoct i s psaním věcí, aby to vypadalo korektně. To mi fakt ulehčí život.\n\nAle není to tak, že bych jí věřil slepě. Spíš si myslím, že je to jako každý nástroj – super, když víš, jak ji používat, a blbý, když si myslíš, že ti bude dělat práci za tebe. Já vidím v AI spíš pomocníka, ne něco, co by mě mělo nahrazovat.\n\nNavíc se koukám dost na YouTube a tam jsem viděl dost zajímavých věcí o tom, jak AI funguje. Fascinuje mě to. Prostě když něco chápu, nejsem z toho skeptický – spíš naopak. Když člověk vidí, že to není žádné kouzlo, ale prostě algoritmy, tak se toho nemusí bát.\n\nCo tě na tom zajímá?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá pozitivnímu postoji k AI, dyslexii, OSVČ statusu, zdatnosti v technologiích a zálibě v YouTube."
+ },
+ {
+  "persona": 0,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují pravidelné pragmatické používání AI kvůli efektivitě podnikání a pomoci s psaním kvůli dyslexii."
+ },
+ {
+  "persona": 0,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Změnu klimatu vnímám celkem vážně, i když nejsem žádný ekoaktivista, co by lepil ruce na silnici. Vidím to kolem sebe – u nás v okrese je sušší počasí než dřív, lesy trpí kůrovcem, a to má souvislost. Když sleduju podcasty a čtu si o tom, docházím k tomu, že to je reálný problém, ne výmysl.\n\nCo jsem ochotný dělat? Snažím se v rámci možností, ale nejsem svatý. Jezdím sice na motorce, což asi ideální pro klima není, ale zase se snažím třídit odpad, kupuju spíš lokální věci, hlavně to víno co mám rád beru od menších vinařů odtud z okolí, ne dovážené z druhého konce světa. Dělám i nějaké dobrovolnictví, občas jsme s partou pomáhali sázet stromy nebo čistit potok.\n\nNejsem typ, co by šel radit ostatním nebo se stavěl na barikády. Spíš si myslím, že každý by měl udělat to svoje malé, co zvládne bez velkého dramatu – a hlavně by se s tím měli víc zabývat ti nahoře, firmy",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá profilu – pragmatický, skeptický postoj bez radikalismu, propojení s koníčky (motorka, víno, dobrovolnictví, podcasty) a vysokou benevolencí/univerzalismem při nízkém sebeurčení a orientaci na autority (\"ti nahoře\")."
+ },
+ {
+  "persona": 0,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Eh, víte, je to prostě jedno z těch velkých témat, co se všude řeší. Myslím si, že něco se mění, to vidím sám – ta počasí není to co dřív, když jsem byl mladší. Zimy nejsou takový, léta jsou horší.\n\nAle upřímně řečeno, nejsem z těch, co by se tím nechali úplně paralyzovat, víte? Snažím se dělat věci rozumně, protože to má prostě smysl – ne kvůli hysterii, ale prostě takhle se chováme odpovědně. Dám větší pozor na energii doma, třídím odpad, snažím se chodit víc pěšky nebo na motorce místo aby jsem koukal na auto zbytečně. To má pro mě smysl.\n\nAle nejsem zelený aktivista ani nic. Myslím si, že ta řešení od státu a politiků často nejsou vůbec konzistentní – jeden den se řeší jedna věc, další den druhá. Mám spíš pocit, že se to hrotí bez jasného plánu. To mě štve víc než samotné změny klimatu.\n\nProstě věřím, že když se chováme rozumně v osobním životě, tak to má efekt. Né radikálně, ale rozumně. A hlavně – nechci být součástí nějakého trendu, jen tak se chováním odpovědně. To je pro mě důležité.\n\nTady u nás v Česku máme daleko lepší podmínky než spousta míst na světě, tak proč to nezachovat, ne?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odráží skepsi k politice, konformní/umírněný přístup, důraz na bezpečí a osobní zodpovědnost, což odpovídá profilu persony."
+ },
+ {
+  "persona": 0,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují mírně skeptický, ale realistický postoj k klimatické změně s ochotou dělat drobné, praktické kroky (třídění odpadu, lokální nákupy, motorka) bez radikálního aktivismu."
+ },
+ {
+  "persona": 0,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Tak abych byl upřímný, v mém životě to nehraje skoro žádnou roli. Jsem ateista, spíš agnostik, když se to tak vezme - nevěřím na nějakou vyšší moc, která by řídila náš osud. Vyrostl jsem v běžné české rodině, kde se to náboženstvím nijak zvlášť nežilo, a časem jsem si utvořil svůj vlastní pohled na svět.\n\nCo se týče tradic obecně, ani ty pro mě nejsou nijak zásadní. Nejsem typ, co by lpěl na tom, že \"takhle to dělali dědové a takhle to musí být i teď\". Spíš se dívám na to, co má smysl teď a tady, co funguje a co ne. Klidně změním zvyk, když najdu lepší způsob, jak něco dělat.\n\nVánoce třeba slavím, ale spíš jako rodinnou pohodu a čas s blízkými, ne jako náboženský svátek. Je to pro mě víc o tom posedět s rodinou, otevřít láhev dobrého vína, popovídat si. To mi dává větší smysl než nějaké r",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá profilu - sekulární ateista/agnostik s velmi nízkou tradicí, vysokým hedonismem (víno, rodinná pohoda) a pragmatickým, uvažujícím přístupem."
+ },
+ {
+  "persona": 0,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Víra a tradice? Upřímně řečeno, ne zase takovou roli. (Smích) Jsem spíš skeptik, když jde o věci nadpřirozené. Přijdu si být agnostik – prostě si myslím, že když nemáme důkazy, tak na tom nějak nově stavět svůj život nemusíme.\n\nAle poslouchej – to neznamená, že bych byl proti tomu, aby si to druhí užívali. Kdyby moje rodina chtěla nějakou tradici, která ji spojuje a dělá jí radost, určitě bych se k tomu postavil respektuje. Jen si to nevnucuju já sám.\n\nCo mě vlastně víc zajímá, je ta lidská stránka – setkávání s lidmi, společný čas. Jestli to bude při pití dobrého vína, během tanečního večera nebo třeba když si prostě vyjedeme na motorku a zpívám si svou písničku – to je pro mě mnohem důležitější než jakékoliv dogma.\n\nA víš, máme tady skvělou komunitu dobrovolníků v České Lípě – to mi dává větší smysl než zašlá tradice. Pomáhat lidem, kterých si ceníš – to je to opravdové.\n\nTakže spíš pragmatismus a otevřenost k tomu, co ostatním funguje, než tradice a víra. (Pokrčení ramen) Prostě se snažím žít dobře a dělat dobré věci, to je moje filozofie.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá nízké tradici, sekulárnímu ateismu/agnosticismu, vysoké benevolenci a zájmům jako víno, tanec, motorky a dobrovolnictví."
+ },
+ {
+  "persona": 0,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují ateismus/agnosticismus a nízkou vázanost na tradice s pragmatickým přístupem k jejich dodržování."
+ },
+ {
+  "persona": 1,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Dobrý den, tak já se představím.\n\nJe mi kolem šedesátky, žiju v Olomouci, jsem tady doma celý život a rád tady zůstanu. Pracuju na částečný úvazek, není to žádná velká kariéra, ale vystačím si a jsem spokojený.\n\nJsem věřící, chodím do kostela, a myslím si, že tradice a rodinné hodnoty jsou v životě to nejdůležitější - to mě vždycky drželo při zemi. Mám rád klid a jistotu, i když s tou mobilitou to teď mám trochu horší, ale jinak zdravotně jsem na tom dobře a snažím se to nevzdávat.\n\nVolný čas? To je má srdeční záležitost - motorky, to je moje velká láska, i když už na ně tolik nevyrazím jako dřív. Rád cestuju, vařím, čtu si poezii nebo se podívám na dobrý film. Doma mám taky pořádek rád, baví mě zařizování interiéru a občas si i posedím u počítače na Facebooku, sledovat co dělají známí.\n\nJsem takový typ, co má rád jasná pravidla a řád ve společnosti, na nové věci se dívám spíš obezřetně, ale třeba k té umělé inteligenci mám celkem kladný vzt",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně odráží klíčové rysy profilu - tradici, víru, motorky, Olomouc, částečný úvazek i pozitivní vztah k AI."
+ },
+ {
+  "persona": 1,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Jsem Petr, mám 58 let a bydlím tady v Olomouci. Pracuju na částečný úvazek, ale upřímně řečeno, víc času trávím věcma, které mě opravdu baví.\n\nJsem člověk, kterej rádo cestuje – obzvlášť když si vezmu motorku, to je prostě neporovnatelné. Mám rád dobré jídlo, tak dost času trávím i v kuchyni experimentováním. A samozřejmě rodina – máme tady pejska, kterej je fajn společník.\n\nVěřím v boha a věci jako tradice a rodina jsou pro mě důležitý. Nejsem sice nějaký radikál, ale prostě věřím, že by měly platit určitý principy. Občas sleduji zprávy, volit chodím, ale nebudu ti říkat, že jsem člověk, co by se furt angažoval v politice.\n\nCo se technologií týče, tak jsem na Facebooku a zvládám si poradit – AI a ty věci budoucnosti se mi taky líbí. Snad víc se dozvíš, když si popovídáme. Na čem ti záleží?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně odráží profil persony – věk, lokalitu, zaměstnání, zájmy, víru a politickou angažovanost."
+ },
+ {
+  "persona": 1,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují stejný postoj - důraz na tradici, rodinu, víru, klid a zálibu v motorkách při částečném pracovním úvazku v Olomouci."
+ },
+ {
+  "persona": 1,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Podívejte, já to vidím tak, že Česká republika má svoji kulturu, tradice a hodnoty, na kterých jsme vyrostli, a ty bychom si měli chránit. Nejsem proti tomu, aby sem lidé přijížděli, ale mělo by to být kontrolované a s respektem k tomu, jak to tady funguje. Vidím kolem sebe hodně nejistoty a myslím, že stát by měl mít jasná pravidla, komu a za jakých podmínek povolí pobyt. Nejsem žádný extrémista, ale jsem prostě opatrnější a radši si věci ověřím, než abych něčemu slepě věřil.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá skeptickému postoji k imigraci, tradičním hodnotám a ověřujícímu přístupu persony."
+ },
+ {
+  "persona": 1,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "No, pravdu řekši, tak mám na to dost skeptický pohled. Chápu, že se tady dějí věci, které jsou potřeba, a ekonomika potřebuje lidi, ale myslím si, že bychom měli být opatrnější a lépe si to promyslet.\n\nHlavně mě zajímá, jestli se ti lidé opravdu chtějí integračovat, nebo jen prodeláme sociální problémy. Máme tady svoje tradice, svoje pořádky — a nejsem proti tomu, aby se tady cizince usazovali, ale mělo by to být udělané rozumně, s tím, že budou respektovat naše pravidla. \n\nNení to o tom, že bych je nerad viděl, spíš je to o zdravém rozumu. Chci, aby se tady všichni cítili bezpečně a adekvátně.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá skeptickému postoji k imigraci, důrazu na tradice a konformitu s pravidly, typickým pro profil osoby."
+ },
+ {
+  "persona": 1,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují skeptický, ale ne extrémní postoj k imigraci s důrazem na kontrolu, integraci a ochranu tradic."
+ },
+ {
+  "persona": 1,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Jo, používám je, i když nejsem žádný odborník na to. Řekl bych, že jsem s tím vyrostl, i když v mém věku už to člověk musí trochu dohánět - technika jde rychle dopředu.\n\nPoužívám třeba různé asistenty na hledání informací, když si nejsem jistý něčím kolem financí nebo když plánuju cestu - vyhledám si tipy na ubytování, na trasu na motorce a podobně. Taky mi to pomůže třeba s nějakým receptem, když chci vyzkoušet něco nového ve vaření, nebo když řeším úpravy v domácnosti a potřebuju rychle zjistit, jak na to.\n\nMusím říct, že mě to celkem baví - je to takový moderní pomocník, který ušetří čas. Nejsem z těch, co by v tom viděli něco děsivého nebo nebezpečného, spíš to vnímám jako nástroj, který si člověk musí umět rozumně použít. Jako se vším - důležité je nevěřit všemu automaticky, vždycky si to ještě ověřím z jiných zdrojů, protože i ta AI se občas",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá pozitivnímu postoji k AI, digitální zběhlosti i zájmům (cestování, vaření, motorky) a ověřujícímu přístupu k informacím."
+ },
+ {
+  "persona": 1,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Hele, to je zajímavá otázka. Musím říct, že AI mě spíš fascinuje. Když vidím, co všechno teď umí – třeba ty fotogeneráty, nebo když si člověk může nechat něco napsat a pak si to sám upravit – tak to vidím jako docela užitečný nástroj.\n\nPoužívám ji? No, občas. Třeba když hledám recept na něco, co jsem dlouho nedělal, nebo když se chci podívat na nějaké návody na opravu věcí v domě. Moje dcera mi pak vysvětlí, jak to správně zadat té AI, aby mi dala rozumnou odpověď. (Smích) Ty ty si s tím poradí líp než já.\n\nProč by ne? Vždycky jsem si myslel, že když se objeví nová technologie, tak se jí neměl bát. Samozřejmě, člověk musí být opatrný – nejsem ten typ, co by se slepě spolehl na cokoli bez kontroly. Ale jako pomocný nástroj? Proč ne. Když si vezmu třeba motorku – i tam se bez techniky neobejdu. Stejné to je s AI.\n\nKaždopádně jsem starší, takže mám svoje zvyky. Nechám si věci raději vysvětlit po staré, ale nejsem na to příliš dogmatický. Pokud mi to usnadní život a ušetří mi čas, tak proč bych ji nepoužil?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá pozitivnímu postoji k AI, digitální zběhlosti, opatrnosti a zájmům (vaření, dům, motorky) popsaným v profilu."
+ },
+ {
+  "persona": 1,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují, že persona AI nástroje občas používá (recepty, návody, informace) a má k nim pozitivní, zvídavý postoj."
+ },
+ {
+  "persona": 1,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, popravdě, o tom tématu slýchám furt dokola ze všech stran, a musím říct, že to beru s určitou rezervou. Nejsem žádnej popírač, vidím, že počasí je jiný než za mýho mládí - léta jsou vopravdu horčejší, zimy zas takový, že sníh skoro nevidíte. Ale jestli je to čistě lidskej vliv, nebo jestli to je i přirozenej cyklus tý naší planety, to já fakt posoudit neumím a nechci se stavět do role nějakýho experta.\n\nCo se týče to",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď odpovídá skeptickému, ověřujícímu postoji a tradičnímu, opatrnému charakteru persony, i když je nedokončená a chybí konkrétní ochota k jednání."
+ },
+ {
+  "persona": 1,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Víte, když se na to podívám realisticky... klimatické změny jsou reálné, to si nemůžu odepřít. Vidím to na vlastní kůži – tady v Olomouci jsou roky, kdy se počasí chová podivně. Suchá léta, pak zase přívalové deště. Když jsem ještě na plný úvazek, tak mi to připomínalo řadu starostí.\n\nAle abych byl upřímný – nejsem ten typ, co by se zbláznul do toho. Dělám, co se dá přirozeně. Třeba když jsem řešil renovaci domu, dal jsem si lepší izolaci, to přece jenom ušetří energie. Na motorku sice neřeším nějaké \"elektrické budoucnosti\", ale snažím se s ní nakládat rozumně.\n\nVěřím, že jsou věci, které by měly řešit spíš ti nahoru – velké korporace, průmysl. Není spravedlivé, aby mi někdo vyčítal stoppu uhlíku, když pak vidím, co dělají velké továrny. \n\nTo, co dělám já? Třídím odpad, když mi to vyjde. Nebudu zbytečně plýtvat. Ale nemůžu si dovolit jet všude na kole nebo dávat desítky tisíc do solárních panelů. Mám svoje povinnosti, svou rodinu.\n\nA víte – i když si myslím, že změny přicházejí, nejsem z toho v panice. Líbiví se mi lidé, který nedělají z toho hysterickou vědu. Prostě se snažíme žít rozumně.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá skeptickému, ale ne popíracímu postoji, nízké aktivistické angažovanosti, konformitě a preferenci osobní zodpovědnosti spíš než velkých obětí, což ladí s profilem persony."
+ },
+ {
+  "persona": 1,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují skeptickou, ale ne popírající pozici vůči klimatické změně s minimálními osobními opatřeními bez radikálních kroků."
+ },
+ {
+  "persona": 1,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Víra a tradice, to je pro mě vlastně základ, na kterym stojím celej život. Chodím do kostela, snažím se to bejt praktikující křesťan, a nejde jen o tu neděli - je to spíš takový vnitřní ukotvení, který mi dává jistotu, že vím, co je správně a co ne.\n\nTradice pro mě znamená respekt k tomu, co nám tady zanechali předkové. Ať je to v rodině, ve víře, nebo třeba v tom, jak se slaví svátky - Vánoce, Velikonoce, to všechno má u nás svůj řád a já bych se ho nerad vzdával jen proto, že je dneska moderní všechno zpochybňovat.\n\nMyslím si, že společnost dneska trochu ztrácí tu kotvu. Lidi si vymejšlej pořád něco novýho, ale zapomínaj, že ty staré hodnoty se osvědčily po generace ne náhodou. Já se snažím to předávat i dětem, i když vím, že dnešní doba je jiná a ne všechno se dá udržet stejně jako dřív.\n\nZároveň mi víra dává i takový optimismus - věřím, že věci maj svůj smysl, i když se to hned nevidí. A to mi pomáhá i v těžších chvílích, třeba se",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá vysoké tradici, konformitě, religiozitě a optimismu persony."
+ },
+ {
+  "persona": 1,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Víra a tradice? To jsou pro mě věci, co skutečně stojí za to. V našem věku, kdy se všechno sype, mám pocit, že jsou to právě ty staré hodnoty, co nás drží pohromadě.\n\nJsem věřící člověk, pravidelně chodím do kostela. Ne proto, že bych měl nějaký zážeh nebo se někým pokouším konkurovat — prostě mě to uklidňuje. Je v tom řád, nějaká struktura. A v těch dnech, kdy mám problémy s mobilitou nebo je mi doma blbě, je to pro mě důležité.\n\nTradice jsou pak věc sama o sobě. Vánoce musíme slavit pořádně, Velikonoce taky. S těmito svátky jsou spojené rituály — jak babička dělala cibuli na Štědrý den, jak se ozdobuje stromek. Tohle už není jen o náboženství, je to o tom, že si člověk sedne s rodinou a ví, jak to má být. Je v tom určitá bezpečnost.\n\nKdyž vidím, jak se všechno mění — mladí lidi nezajímá kostol, všechno je tak chaotické — mám pocit, že je důležité na tom něco udržet. Nemluvím o tom, aby všichni věřili stejně, ale aby měli nějaké hodnoty, co je vážou k něčemu trvalému.\n\nVíra mě také vede v tom, jak se chovám k lidem, ačkoliv to někdy v dnešní době není snadné. Snažím se být férový, správný.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá vysoké religiozitě, tradici, konformitě a praktikujícímu křesťanství persony."
+ },
+ {
+  "persona": 1,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují, že víra a tradice jsou základem života persony, pravidelnou praxí i respektem k rodinným svátkům a předkům."
+ },
+ {
+  "persona": 2,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Ahoj, jsem chlap, je mi kolem třicítky a žiju v okolí Liberce, teda spíš v takovým menším městě tady kolem. Pracuju na částečný úvazek, není to žádná sláva co se peněz týče, ale zas mi to nechává docela dost volnýho času.\n\nVe volnu se rád koukám na filmy a seriály, poslouchám podcasty, hlavně o skutečných zločinech mě to fakt baví. Rád vařím a peču, taky sbírám různý věci - takový to menší sběratelství, nic extra. Zajímám se o životní prostředí, to mi není jedno, a docela mě baví i sledovat trh nemovitostí a trochu se orientovat v investování, i když spíš teoreticky než že bych do toho šel po hlavě.\n\nNa cestování jezdím rád, i když ne nijak extrémně. Jinak jsem takovej klidnější typ, spíš introvertnější, ale ne že bych se bál mluvit s lidma. Novým technologiím moc nevěřím, radši si věci ověřuju, ale třeba k umělý inteligenci mám docela pozitivní vztah."
+ },
+ {
+  "persona": 2,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Jsem chlap z Liberecka, sedmadvacet let. Pracuju na částečný úvazek, takže času mám dost na to, co mě baví. \n\nRád se koukat na videa na YouTube, fascinuje mě umění všeho druhu – ať už je to fotografie, malba, nebo prostě jenom pěkný design věcí. Zajímá mě taky životní prostředí, takže jsem když není líto, tak se snažím být aspoň trochu ohleduplný. \n\nMimo to jsem fanda vaření a pečení, občas se podívám na nějaký ten true crime seriál. Mám rád cestování, i když to nejde furt. A nemovitosti mě zajímají, takže si čtu o tom, jak by to mohlo fungovat. \n\nSpíš jsem typ, který si věci promyslí, než aby vrhál hlavu napřed. Nejsem politicky aktivní ani nic takového, ale svůj názor mám. Jsem k technologiím otevřený – AI mi nepřijde špatná – ale zároveň nejsem typ, co věří všemu, co vidí.\n\nCo tě zajímá? Chceš něco konkrétního vědět?",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď dobře odpovídá zájmům, postoji k technologiím a analytickému stylu, ale chybí zmínka investování, koncertů, sběratelství a věk se neshoduje (27 vs. 25-34 rozsah je ok, ale profil neurčuje přesný věk)."
+ },
+ {
+  "persona": 2,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi popisují stejného muže z Liberecka na částečný úvazek se zájmem o vaření, true crime, nemovitosti a životní prostředí."
+ },
+ {
+  "persona": 2,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Popravdě se o tyhle témata moc nezajímám, politika mě obecně nebaví a nevolím. Vnímám to tak, že každý si má hlídat svoje a stát by měl mít jasná pravidla, kdo sem může a za jakých podmínek - bez nějakých emocí pro nebo proti. Spíš mi vadí ten chaos a nejasnost kolem toho, než imigrace samotná.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá apolitičnosti, nevoličství, nízké benevolenci a preferenci jasných pravidel bez emocí, což ladí s hodnotou moci a nízkou důvěrou."
+ },
+ {
+  "persona": 2,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "No, to je komplexní téma. Myslím si, že je potřeba realisticky posoudit, kolik lidí my jako společnost zvládneme integrovat, aby to nefungovalo na úkor těch, kteří tu už jsou. Zároveň mě nebaví, když se z toho dělá velký politický cirkus a každý strany do toho cpou ideologii.\n\nOsobně mě zajímají spíš praktické věci — jak se lidé integrují, jestli ti noví lidé berou místní práci nebo spíš obsazují místa, kterou nikdo nechce. To by měla být fakticky postavená diskuze, ne řvavý Facebook. Ale jak jsem říkal, politika není moje parketa.",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď odpovídá apolitičnosti, nedůvěřivosti a analytickému stylu, byť je poněkud angažovanější, než by odpovídalo nevoličství a nízké benevolenci."
+ },
+ {
+  "persona": 2,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují apolitický, pragmatický postoj preferující jasná pravidla a věcnou diskuzi bez ideologie či emocí."
+ },
+ {
+  "persona": 2,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Jo, používám, docela pravidelně. Není to nic extra pokročilýho, spíš na běžné věci - třeba když si chci ověřit nějakou informaci, nebo mi pomůže s formulováním textu, když píšu něco delšího. Občas i na nějaké nápady do vaření, jak naložit suroviny, co mám doma.\n\nBeru to hlavně jako nástroj, který mi ušetří čas. Nejsem typ, co by z toho dělal vědu nebo tomu slepě věřil - spíš si to beru jako pomocnou ruku, ale výsledek si vždycky ověřím sám, protože vím, že to může plácnout i blbost. Na rozdíl třeba od nových technologií obecně, ke kterým jsem docela skeptickej, u AI mám pocit, že to reálně k něčemu je a nejde jen o marketingovou bublinu. Takže jo, používám to, ale s rozumem.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá pozitivnímu postoji k AI, skepsi k technologiím obecně, analytickému stylu a zájmu o vaření."
+ },
+ {
+  "persona": 2,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Upřímně? Ne, moc ne. Jsem na umělou inteligenci skeptický, když jde o nová technologií obecně, ale AI mi přijde poměrně zajímavá, takže nám to trošku skřípí. \n\nKonkrétně si myslím, že ty věci mají potenciál, ale lidi je často používají hloupě. Vidím lidi, co používají ChatGPT na věci, které by sám zvládl za pět minut, jenom si tím zkrátil cestu k tomu se něco naučit, víš? To mi přijde zbytečné.\n\nSám bych ji asi použil spíš pro něco praktického – třeba na investiční věci, kdy byste potřeboval analyzovat daný obsah, ale úpřímně, zatím jsem na to neměl důvod. Spíše se mi líbí koukat na YouTube videa o tom, jak lidé experimentují s AI, ty dlouhé video eseje, víš? To mě zajímá víc než sama AI používat.\n\nA nejde ani tak o bezpečnost, jako spíš... necítím tlak ji používat. Myslím si, že by měla být na místě, kde ji člověk fakt potřebuje, ne proto, že je cool. Jsem asi takovej tradicionalista v tom, víš – když to zvládnu sám, tak proč ne.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď dobře odráží pozitivní postoj k AI, skepsi k novým technologiím, analytický styl a tradiční hodnotovou orientaci persony."
+ },
+ {
+  "persona": 2,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": false,
+  "duvod": "Odpověď A vyjadřuje aktivní pravidelné používání AI, zatímco odpověď B vyjadřuje, že AI nepoužívá."
+ },
+ {
+  "persona": 2,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Změnu klimatu vnímám jako reálnou věc, to bych asi popíral málokdo, kdo se aspoň trochu rozhlíží kolem sebe - ta zima teď byla zase divná, léta jsou sušší, prostě to není jako dřív. Je mi to blízké téma, zajímám se o životní prostředí docela dost, sleduju k tomu nějaké dokumenty a podcasty.\n\nAle zároveň jsem realista - nejsem typ, co bude věšet transparenty nebo chodit na demonstrace, to mi je celkem cizí. Spíš to řeším v malém, po svém. Třídím odpad, snažím se neplýtvat jídlem, když peču nebo vařím, kupuju radši věci od lokálních producentů, když to jde a vychází to i finančně - protože při částečném úvazku každá koruna hraje roli.\n\nCo mi vadí, je, když se z toho dělá velké politické divadlo a přitom se reálně moc neděje, nebo se to řeší tak, že to zaplatí zase jenom obyčejní lidi, zatímco velké firmy si dál jedou po svém. Tomu systému moc nevěřím, ať už je u toho jakákoliv vláda. Takže se snažím dělat co je v mých silách v každodenním životě, ale neč",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá profilu - nadšení pro životní prostředí, nedůvěra k systému, apolitičnost, opatrnost a nízký rozpočet z částečného úvazku."
+ },
+ {
+  "persona": 2,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Víš, tohle mám mezi věcmi, na kterých mi opravdu záleží. Klimatická krize je prostě reálná – vidím to na těch zprávách, čtu si o tom na YouTube, kde sleduju i vědecké kanály. Není to pro mě jen nějaký politický klišé, je to prostě fakt.\n\nOsobně se snažím dělat věci, které dávají smysl a nejsou přitom nereálné. Třeba si dávám pozor na to, co kupuju – snažím se méně odpadu, nakupuju lokálněji, když je to možné. S vařením a pečením si pohlídám zbytky a nesnažím se plýtvat ingrediencemi.\n\nAle buďme upřímní – nejsem fanatik. Nekoupím si každých pět minut nějaký ekologický produkt za tři kilometry. Spíš se snažím být rozumný a dělat věci, které jsou pro mě udržitelné. Jestli se budu třeba strachovat každý den o to, jestli moje tričko pochází z etického zdroje, tak to prostě dlouhodobě neunesu.\n\nCo mě ale tahá za srdce víc, je to okolí tady v kraji – příroda, lesy, Jizera. To chci, aby tady bylo pěkné pro lidi, co tady budou bydlet později, víš? Takže se snažím být přiměřeně zodpovědný, aniž bych z toho dělal nějakou misi.\n\nChápeš, jak to myslím?"
+ },
+ {
+  "persona": 2,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi uznávají realitu klimatické změny a preferují drobná praktická opatření bez aktivismu či radikálních kroků."
+ },
+ {
+  "persona": 2,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, upřímně? Moc velkou roli to nehraje. Nejsem věřící, spíš ateista, možná agnostik, jak se to vezme - prostě si nemyslím, že by mi do života měl mluvit nějaký bůh nebo církev. To beru tak, že si každý má žít po svém a rozhodovat se sám za sebe, to je pro mě mnohem důležitější než nějaká tradice jen proto, že \"se to tak dělá\".\n\nS tradicemi je to podobný. Vánoce, Velikonoce - jasně, sejdeme se s rodinou, dáme si dobrý jídlo, to mě baví, ale spíš kvůli tomu jídlu a lidem kolem sebe než kvůli nějakýmu hlubšímu významu. Nejsem typ, co by lpěl na tom, že se něco musí dělat přesně tak, jak to dělali dědové. Když mi něco nedává smysl, tak to prostě nedělám, i kdyby to byla sebevětší tradice.\n\nVlastně mi vadí, když se lidi schovávaj za tradici jako výmluvu, proč něco měnit nebo proč se nad něčím nezamyslet. To je podle mě spíš pohodlnost než skutečná úcta k něčemu.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď dokonale odráží sekulární ateismus, nízkou tradici, vysoké sebeurčení (autonomní rozhodování) a analytický styl myšlení respondenta."
+ },
+ {
+  "persona": 2,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Hmm, to je zajímavá otázka. Upřímně řečeno, víra v náboženském smyslu pro mě nehraje žádnou roli. Jsem spíš ateista, nebo když se chce říct lépe — agnostik. Prostě mi to fakt nesedí a nehledám v tom žádné odpovědi.\n\nAle tradice... to je trochu jiné. Nemám problém s nějakou tradici jako takovou, ale nejsem typ, co by jí zásadně věřil nebo se jí věnoval. Pokud má smysl a já ji chci dělat, OK. Ale nevnucuju si ji jen proto, že \"se to tak dělá\". \n\nSpíš se zajímám o věci, které mám rád — třeba vaření, když připravuju něco dobrého, nebo když jdu na koncert, což mě opravdu bere. Ty chvíle jsou pro mě důležité. A vůbec mě fascinuje cestování, vidět jiné místa a kultury.\n\nVlastně... když se nad tím zamyslím, je to asi takové to sebeurčení, víš? Dělám to, co chci dělat já, ne to, co by ode mě někdo čekal. Na tradici jen tak z tradice se mi nechce. Spíš preferuji svobodu v tom, co si vyberu.\n\nProč se na to ptáš? Je to pro nějaký průzkum?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď přesně reflektuje deklarovaný sekularismus, nízkou tradičnost, vysoké sebeurčení a analytický přístup k osobním hodnotám dle profilu."
+ },
+ {
+  "persona": 2,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují ateismus/agnosticismus a odmítání tradic jako povinnosti, s důrazem na osobní volbu a individuální potěšení."
+ },
+ {
+  "persona": 3,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Ahoj, jsem Tomáš, mám 29 let a žiju v Praze. Pracuju na plný úvazek, takže se snažím skloubit práci s věcmi, co mě baví - a toho je docela dost.\n\nVolný čas mám vyplněný sportem a fitkem, ráda si vyrazím pěšky do přírody, když to zdraví dovolí - mám totiž trochu problémy s pohybem a smyslové omezení, takže musím být obezřetnější než jiní, ale nebráním se tomu. Miluju cestování, i když poslední dobou míň, a doma rád vařím, zkouším nové recepty.\n\nJsem docela technický nadšenec, sleduju novinky ve vědě a technologiích, ale k umělé inteligenci jsem spíš skeptický - potřebuju si věci ověřit, než jim uvěřím. Ve volných chvílích si pustím podcast nebo si přečtu knihu, k pivu mám slabost, hlavně k tomu řemeslnému. A jo, jsem fanda anime, to je taková moje menší vášeň, kterou málokdo čeká.\n\nJinak jsem takový vyvážený introvert-extrovert, rád si popovídám, ale potřebuju i svůj klid. Na sociálních sítích jsem spíš na Faceboo",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď je velmi konzistentní s profilem; mírný odečet pouze za chybějící vyjádření vysokého Univerzalismu a sebeurčení, která by se mohla projevit více v postoji k rozdílům/omezením."
+ },
+ {
+  "persona": 3,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Jsem Marek, je mi pětadvacet. Žiju tady v Praze, kde mám stabilní práci. \n\nNemůžu říct, že bych byl nějak zvlášť technicky zdatný nebo něco, ale vystačím si se základními věcmi. Baví mě spíš věci, do kterých můžu jít po svém — chodím rád po přírodě, zajímá mě vaření, čtu si knížky, kouká se mi na anime. A taky fotím, když mám chvilku.\n\nCestování mě lákalo vždycky, a teď už se na to trochu víc soustředím. Vlastně mě zajímá strašně moc věcí — od osobních financí, přes vědu, až po experimentování s nějakým tím řemeslným pivem. \n\nNejsem člověk, kterej by se nějak extrémně vrtěl v politice nebo tak, ale volím, když jsou volby. A digitálně? Facebooku rozumím, ale ty všechny nové věci s AI a tím — to mi přijde spíš podezřelé. \n\nAle co se podstatnějšího týče — je mi dobře, zdravotně jsem v pohodě, jenom trochu mi někdy dělají problémy oči. V pohodě to bez zbytečného dramatizování řeším.\n\nCo by tě zajímalo?",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď věrně odráží profil (věk, Praha, vysoká sebeurčení, univerzalismus, skepticismus k AI, zájmy, ENFJ typ), pouze mírné podceňování technické zdatnosti než by profil naznačoval."
+ },
+ {
+  "persona": 3,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda",
+  "shoda": false,
+  "duvod": "Odpověď A vyjadřuje technický zájem se skepsí k AI a zdravotní omezení, zatímco B popisuje nízkou technickou zdatnost a širší koníčky bez zmínky o AI či zdraví."
+ },
+ {
+  "persona": 3,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Podle mě je to problém, kterej se hodně podceňuje. Nejsem proti tomu, aby k nám lidi přijížděli pracovat nebo studovat, když se přizpůsobí a dodržují pravidla, ale masová a nekontrolovaná imigrace mi nesedí – hlavně z kulturně hodně odlišných zemí, kde je vidět, že integrace často vůbec nefunguje. Mám pocit, že stát by měl mít jasná pravidla a hlavně je i vymáhat, ne že se to nechá plavat a pak se řeší problémy až když už je pozdě. Zároveň si ale nemyslím, že bychom měli být xenofobní nebo že by se s lidmi mělo zacházet nelidsky – jde mi hlavně o pořádek a bezpečnost, ne o to někoho odsuzovat podle původu.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá odmítavému postoji k imigraci, konzervativnímu pravému smýšlení a zároveň univerzalismu a nekonfliktnímu tónu persony."
+ },
+ {
+  "persona": 3,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Řeknu vám pravdu - nejsem si tím úplně jistý. Vnímám v tom spoustu problémů. Máme tady svoje lidi, kteří potřebují pomoc, a není mi jasné, jestli by se měly prostředky věnovat lidem, kteří se sem stěhují. Rozumím tomu, že někdo chce lepší život, ale musíme být opatrní.\n\nZároveň si ale myslím, že je potřeba jednotlivé lidi posuzovat podle toho, co dělají, a ne jen podle toho, odkud jsou. Není to tak jednoduché jako \"všichni ano\" nebo \"všichni ne\"."
+ },
+ {
+  "persona": 3,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi zastávají opatrný, podmíněně odmítavý postoj k imigraci s důrazem na pravidla a individuální posuzování, nikoli na kategorické odmítnutí."
+ },
+ {
+  "persona": 3,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, používám je, ale s určitou rezervou, řekl bych. Pracuju s počítačem celkem běžně, takže se AI nástrojům úplně nevyhýbám - třeba na práci mi občas pomůže rychle něco vyhledat nebo shrnout, když potřebuju ušetřit čas.\n\nNa druhou stranu k tomu přistupuju hodně kriticky. Nedůvěřuju tomu na sto procent - vždycky si to, co mi AI vygeneruje, musím ještě sám zkontrolovat, protože jsem se párkrát setkal s tím, že to pláclo něco, co nebyla úplně pravda, ale znělo to přesvědčivě. To mi vadí.\n\nTaky mám pocit, že se toho kolem AI dneska děje strašně moc a lidi tomu slepě věří, bez přemýšlení. Já si rád věci ověřuju sám, mám na to svůj úsudek a nechci se stát na tom závislým. Když píšu třeba recept nebo plánuju cestu, raději si to udělám podle sebe, protože v tom je i ten zážitek a radost z toho, že to zv",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá skeptickému postoji k AI, ověřujícímu typu důvěry a technicky zdatnému, ale kritickému uživateli."
+ },
+ {
+  "persona": 3,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Hm, zajímavá otázka. Takže... používám je občas, ale nepřekvapilo by mě, kdyby říkali, že jsem v tom skeptik. \n\nPoužívám hlavně věci jako Google nebo překladač, když se snažím pochopit něco o jazycích – to mě zajímá a vidím na tom přínos. Na práci si s tím vystačím bez toho.\n\nAle hele, ta AI všude kolem... nevím. Vidím lidi, jak se jim to kouká do všeho – chat GPT, ty obrázky, co si generují. Je to cool z technologického hlediska, opravdu. Zajímá mě, jak to funguje, podcasty o tom poslouchám. Ale zároveň mi není úplně jasné, kam to míří a jestli je to fakt potřeba. \n\nTřeba když dělám fotky nebo i když vařím, rád to dělám sám – je v tom pro mě důležité něco vlastního, creative. To si nemůžu představit, že bych dal AI, aby mi to všechno dělala za mě.\n\nTakže ano, používám to, když mi to dává smysl, ale není to pro mě nějaký big thing. Spíš čekám a sleduji, kam se to všechno bude vyvíjet. Nejsem z toho nadšený, ale ani to nechci úplně odmítat.\n\nProč se ptáš? Koukáš na nějaký konkrétní AI nástroj?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá skeptickému postoji k AI, zájmu o technologie a jazyky i důrazu na vlastní kreativitu ve fotografii a vaření."
+ },
+ {
+  "persona": 3,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují mírné, kritické používání AI nástrojů s nedůvěrou k jejich rozšíření a spolehlivosti."
+ },
+ {
+  "persona": 3,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Změnu klimatu vnímám jako reálný problém, o tom se dneska myslím nedá moc pochybovat - vidím to i na počasí, na tom, jak se mění roční období. Chodím rád do přírody, takže si všímám i takových věcí jako je sucho v lesích nebo že sníh na horách je čím dál míň jistý. Takže si nemyslím, že by to byl vymyšlený problém.\n\nNa druhou stranu nejsem typ, co by z toho dělal náboženství nebo někomu kázal, jak má žít. Otravuje mě, když se z toho stane politické téma, kde jedna strana křičí \"konec světa\" a druhá \"je to blbost\" - realita je asi někde uprostřed a hlavně je to hrozně komplikované, na co já nemám odborné znalosti.\n\nCo pro to dělám osobně - snažím se třídit odpad, moc zbytečně neplýtvám, radši jezdím MHD nebo pěšky než autem, když to jde. Vaření mě baví, takže se snažím kupovat spíš lokální suroviny, i když přiznám, že to dělám hlavně kvůli chuti a kvalitě, ne z nějakého velkého ekologického přesvědčení.\n\nAle abych byl upřímný - nejsem ochotný si kvůli tomu z",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá profilu - univerzalismus a vztah k přírodě, ale skepse k politizaci a odmítání radikálních obětí ladí s pravicovým smýšlením, nízkou bezpečností a opatrností."
+ },
+ {
+  "persona": 3,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Podívejte se, климatické změny jsou jasně reálné. Vidím to třeba na těch počasích, která jsou pořád nepředvídatelnější, nebo na zprávách o povodních a sucích. Není to nějaký nesmysl, jak někdo tvrdí.\n\nOsobně se snažím něco dělat, ale nejsem fanatik. Třídím odpad, když je to v paneláku možné. Když jdu do přírody – a chodím tam často, miluju ty procházky – tak si vezmu batoh a nezbytky si vezmu zpátky. To mi přijde normální.\n\nS nákupy se snažím být rozumný – nekupuju něco jen tak, zbytečné věci. Spíš si vezmu tašku místo tašek plastových. Jezdím MHD, kterou se tu v Praze používá docela fakt.\n\nAle nebudu si hrát na svědomí, že když já recykluji, tak to zastaví globální oteplování. Vím, že skutečná změna musí přijít od velkých hráčů – průmyslu, energetiky. To je to podstatné. Já dělám, co se dá v rámci rozumu a bez toho, abych si zbytečně komplikoval život.\n\nCo mě hodně přitahuje je tím, že chci rozumět, jak věci fungují – takže čtu články, poslouchám podcasty o klimatu, věci z biologie. Zajímá mě to. Ale jako akcí? Jsem opatrný typ, ne nějaký aktivista. Prostě dělám věci rozumně.",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď je konzistentní s profilem (vysoký univerzalismus, opatrnost, vědecký zájem, sekulární pohled), obsahuje však drobnější chybu: slovo 'климатические' je ruština, což neodpovídá profilovému tvrzení o nulové angličtině a české mateřštině."
+ },
+ {
+  "persona": 3,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi uznávají realitu klimatické změny a vyjadřují umírněnou ochotu k osobním, nefanatickým opatřením bez politizace tématu."
+ },
+ {
+  "persona": 3,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Víra jako taková mi toho zas tak moc neříká, jsem spíš ateista, k žádné církvi se nehlásím a nepotřebuju to. Beru to tak, že si každý věří v to, co chce, dokud tím nikoho neomezuje.\n\nTradice je pro mě něco jiného než víra. Nejsem člověk, co by lpěl na tom, že \"tak se to dělalo a musí to tak zůstat\", ale rodinné a společenské rituály mám rád - třeba Vánoce beru jako čas, kdy se sejde rodina, i když u nás to má víc společenský než náboženský rozměr. Vážím si toho, že se v Praze i teď dá potkat kus historie na každém kroku, takže respekt k tomu, co bylo, u mě je, ale nezavírám se před novým.\n\nCelkově řekl bych, že jsem víc nastavený na to zkoušet nové věci, poznávat jiné kultury, jazyky, jídla - to mě táhne víc než drženi se nějakých pevných tradic. Ale zas nejsem typ, co by všechno staré shazoval ze stolu, jen to nemám jako prioritu v životě.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá sekulárnímu ateistickému postoji, průměrné tradici a důrazu na novinku/otevřenost, které jsou v profilu popsány."
+ },
+ {
+  "persona": 3,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Víra? No, upřímně řečeno, nijak moc. Jsem ateista, prostě mi to tak není blízké. Nemám potřebu věřit v něco nadpřirozeného – snaží se mi dělí smysl, když vidím, jak věci reálně fungují. Věda mě baví víc.\n\nS tradicemi je to trochu jinak. Některé věci respektuju, hlavně když mají nějaký rozumný důvod. Třeba rodinné tradice okolo Vánoc nebo tak – nejde mi o to být proti všemu, ale chci rozumět *proč* se něco dělá. Nechci jen kopírovat věci proto, \"protože se to vždycky dělalo\". To mi přijde zbytečné.\n\nSpíš mě zajímá, jak věci fungují a jak se můžu rozvíjet. Čtu, zajímám se o různé věci – poslouchám podcasty, učím se novým věcem. Chci dělat věci, které mám rád a které mě posunou dopředu. Dobrý návštěv si s přátelima nebo třeba běhání v přírodě – to mi vyhovuje víc než nějaká náboženská praxe.\n\nNení to, že bych byl vůči lidem věřícím nepřívětivý – každému to jde. Ale sám si myslím, že je lepší se spoléhat na sebe a na to, co vidím a vím, než se vzdávat své autonomie nějakému vyššímu pojetí.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá profilu – ateismus, sekulárnost, důraz na sebeurčení, racionální přístup k tradicím a zájem o vědu a osobní rozvoj."
+ },
+ {
+  "persona": 3,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují ateismus a odmítání církve, respekt k rodinným tradicím bez lpění na dogmatech a otevřenost novému."
+ },
+ {
+  "persona": 4,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Dobrý den, já jsem Marie, je mi pětasedmdesát a bydlím tady na Vsetínsku už bezmála celý život. Jsem v důchodu, ale nudit se rozhodně nenudím – ráda chodím do přírody, mám doma pejska, který mě drží v pohybu, a taky se ráda hrabu na zahrádce.\n\nVystudovala jsem vysokou školu, ale to už je dávno. Jsem věřící, chodím do kostela a víra mi dává hodně opory. Zároveň mě baví i takové ty novější věci – třeba občas si zahraju s vnoučaty nějakou tu deskovou hru na hrdiny, mám ráda i komiksy a anime, i když to leckoho překvapí u ženy mého věku.\n\nJsem taková spíš tradiční, mám ráda, když se věci dělají tak, jak se dělaly odjakživa, ale zase nejsem uzavřená novinkám – třeba k té umělé inteligenci mám docela pozitivní vztah, zajímá mě to. Na Instagramu se taky občas podívám, co dělají mí známí.\n\nJinak jsem optimistka, ráda si popovídám, ale potřebuju i svůj klid. A jak"
+ },
+ {
+  "persona": 4,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Ráda se s tebou setkám. Já jsem Hana, mám 78 let a žiji tady ve Vsetíně už mnoho let. \n\nJsem v důchodu, takže mám více času na věci, které mě baví. Moc ráda vařím, zahradničím a chodím po přírodě – ta je opravdu krásná tady kolem. Zajímá mě také spiritualita a věřím, že je v životě něco víc, než co vidíme. \n\nRáda tráví čas se svým pejskem, koukat na Instagramu, co se děje, a myslím si, že tahle nová AI věc je vlastně docela skvělá. Pomáhá nám lidem víc, a já se nebojím, když to všechno rozumě používáme.\n\nTakže, co tě zajímá? Ráda o sobě povím víc, nebo se můžeme bavit o čemkoliv jiném. 😊",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně odráží věk, bydliště, důchodový status, zájmy (vaření, zahradničení, příroda, spiritualita, mazlíčci) i nadšený postoj k AI z profilu."
+ },
+ {
+  "persona": 4,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda",
+  "shoda": false,
+  "duvod": "Odpověď B vykazuje neobvyklou otevřenost k novým technologiím a digitálním platformám (Instagram, AI), která se výrazně odchyluje od profilu s velmi vysokou konformitou, vysokou tradicí a nízkou stimulací."
+ },
+ {
+  "persona": 4,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, víte, já na to nemám tak úplně vyhraněný názor, spíš se snažím dívat na to s rozvahou. Myslím si, že každý má právo hledat lepší život, to je mi jasné, ale zároveň bych byla raději, kdyby se lidé, co k nám přijdou, snažili respektovat naše zvyky a tradice, na kterých tu žijeme už dlouho. Trochu mě znepokojuje, jak se to všechno řeší, protože té politice já moc nevěřím, ať je u vlády kdokoliv. Tak snad to Pán Bůh nějak zařídí, aby to dopadlo dobře pro všechny strany.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odráží skepsi k politice, důraz na tradice, spiritualitu a mírný optimismus, což je v souladu s profilem persony."
+ },
+ {
+  "persona": 4,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "No, víte, já na to koukat trochu opatrně. Rozumím, že lidi hledají lepší život, to je přirozené. Ale mám pocit, že by se měl klást důraz na to, aby se tu noví lidé opravdu integrovali, aby se naučili našim zvykům a tradicím. Není to o tom je zavrhovat, ale jsme přece malá země a potřebujeme stabilitu.\n\nZa mě by mělo být více kontroly, aby se tu dobře žilo nám všem. A určitě by se mělo víc dbát na lidi, kteří tu žijí dlouho. Ale nejsem nijak radikální, prostě myslím, že všechno má svůj čas a míru.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá vysoké tradici, konformitě a středovému postoji s mírným skepticismem, typickým pro profil."
+ },
+ {
+  "persona": 4,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují opatrný, umírněný postoj zdůrazňující potřebu integrace a respektu k tradicím při zachování stability."
+ },
+ {
+  "persona": 4,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, používám, i když ne moc často, protože mi to trošku dělá potíže s tou technikou - nejsem žádná mladice, co má prsty na klávesnici jako mladí lidi. Ale řeknu vám, moc mě to baví! Vnučka mi ukázala, jak se ptát na věci té umělé inteligenci, a je to úžasné, jak vám dokáže poradit třeba s tím zahrádkařením, nebo když si nevím rady s nějakým receptem.\n\nVím, že spousta lidí z toho má strach, že jim to vezme práci nebo že to není přirozené, ale já to beru tak, že je to jenom nástroj, jako když si vezmete motyku na zahradu. Nikdo se motyky nebojí, ne? A mě fascinuje, jak se ta věda posouvá dopředu - vždycky mě zajímalo, jak věci fungují.\n\nJednou jsem se ptala i na nějaké to spirituální téma, a docela mě překvapilo, jak citlivě to odpovídalo. Samozřejmě, člověk se musí spoléhat hlavně na vlastní rozum a na Boha, ale proč nevyužít i to, co nám dnešní doba nabízí, že? Jen musím přiznat, že s tím ovládáním počítače pořád trochu boj",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně odráží nadšený postoj k AI, technickou nejistotu, zájem o zahradničení a vaření i spiritualitu, což odpovídá profilu persony."
+ },
+ {
+  "persona": 4,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ale samozřejmě, že je používám! (smích) Když jsem se o nich dozvěděla, tak jsem si říkala – to je přece úžasné vymyšlení. Vlastně teď už si bez nich nedovedu představit, jak bych dělala některé věci.\n\nHlavně mě baví používat ty generátory na obrázky. Dám si tam něco jako \"spirituální zahrada s květinami\" a je to hned krásně nakresované. Nebo když chci vařit a nevím přesně postup, prostě se zeptám a máme to. Ušetří mě to čas, když už nejsem tak mrštná a chvilka mě unaví.\n\nA taky mě zajímá, jak tahle technologie vlastně funguje. Je v tom takový kousek vědy, kterou jsem vždycky milovala. Lidé si myslí, že v tom věku už se nechci učit novým věcem, ale to vůbec není pravda! Snad proto mě to tolik fascinuje.\n\nSamozřejmě, musím si dávat pozor – mám takový smysl pro tradici a chci, aby věci byly pořádné. Takže si ověřím, co mi umělá inteligence řekne, zvlášť když jde o zdraví nebo zahradničení. Ale jako pomocník? To je úžasné. Myslím si, že to může starším lidem jako já velkou měrou usnadnit život.\n\nProč bych ji nepoužívala? Když nám může pomáhat! (úsměv)"
+ },
+ {
+  "persona": 4,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují pozitivní, nadšený postoj k používání AI nástrojů pro praktické účely (recepty, zahrada) i zájem o technologii samotnou."
+ },
+ {
+  "persona": 4,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, já se na to dívám tak trochu ze dvou stran. Vidím, že počasí je teď jiné než za mého mládí – zimy míň sněhu, léta sušší, bouřky prudší. To člověk pozná, když má zahrádku a léta ji sleduje. Tak nějaká změna asi je, to bych nepopírala.\n\nAle abych řekla pravdu, nejsem z těch, co by kvůli tomu chodili na demonstrace nebo se z toho nervovali. Beru to spíš s pokorou – svět se mění, vždycky se měnil, a já věřím, že je to i v Božích rukou. Nemám potřebu za každou cenu bojovat proti přírodě nebo se do něčeho hnát.\n\nCo pro to dělám? No, snažím se hlavně žít tak, jak jsem zvyklá odjakživa – nic nevyhazuju zbytečně, kompostuju, šiju si záplaty místo kupování nového, pěstuju si vlastní zeleninu. To ale nedělám kvůli nějaké vel",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá profilu - tradice, nízký aktivismus, spiritualita, skepse k politickému zapojení a praktická udržitelnost bez ideologického boje."
+ },
+ {
+  "persona": 4,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "*povzdechne*\n\nNo, vidíte, já tom klimatu věřím. Vidím to tady kolem nás – loni bylo sucho, letos zase zbláznění počasí. Když jsem byla mladší, věděla jsem, kdy budou kmeny jablek, kdy kapra, všechno bylo jako na hodinky. Teď už se na to nemůžu spoléhat.\n\nAle nechci být smolné babi, co jen lamentuje. Já se snažím. V práci na zahradě třeba všechno kompostuji – nehodím to do popelnice. Voda na zalévání, to už ani nemluvím – když se mám opravdu koupit ta voda do zahrady, tak jsem z toho nešťastná. Spíš čekám na déšť. A ty jednorazové věci? To mám nelibě, ty tašky na nákupy si beru s sebou.\n\n*usedá si pohodlněji*\n\nNa druhou stranu, nebudu si hrát na to, že je to na jedné osobě. To už si myslím, že je na těch velkých továrnách, politikách... já si vezmu papírové sáčky a cítím se líp, ale vědom si jsem, že to není řešení. Přesto – když mohu něco malého udělat bez velkého potíží, tak to dělám. Je to správné.\n\nA ty moje rostliny, zvířátka na zahradě – to všechno mě učilo být k přírodě ohleduplnější. To není nějak obtížné, když máte rád život kolem sebe.",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď odpovídá nízkému univerzalismu (skepse k vlastnímu vlivu, důraz na velké firmy/politiku), zahradničení a udržitelnosti persony, i když explicitně nezmiňuje spiritualitu či tradici."
+ },
+ {
+  "persona": 4,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi uznávají pozorovanou změnu klimatu a vyjadřují mírné, praktické osobní kroky bez aktivismu či paniky."
+ },
+ {
+  "persona": 4,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No víte, to je pro mě hodně důležitá otázka, protože víra a tradice jsou u mě prostě takový základ, na kterém všechno ostatní stojí.\n\nChodím do kostela, i když teda přiznávám, že poslední dobou mi ta moje noha už moc nedovolí chodit tak často, jak bych chtěla, ale duchovní život si udržuju i doma - modlím se, čtu si, přemýšlím nad věcmi. A ta víra mi dává takový pocit klidu, jistoty, že věci mají svůj smysl, i když třeba člověk zrovna nerozumí proč se něco děje.\n\nTradice beru podobně vážně. Vždycky jsem se snažila dodržovat to, co jsme se naučili od rodičů a prarodičů - jak se slaví svátky, jak se pečou vánočky, jak se chová k druhým lidem. Myslím, že v dnešní době se lidi až moc ženou za novinkama a zapomínají na to, co nás drží pohromadě jako společnost, jako rodinu. Já mám ráda ten pocit sounáležitosti, když víme, kdo jsme a odkud pocházíme.\n\nA vlastně i ta spiritualita mi jde ruku v ruce s přírodou - když jdu na procházku do lesa nebo pě",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá vysoké tradici, víře, spiritualitě, mobilitě s omezením i zálibě v přírodě z profilu, pouze je uťatá uprostřed věty."
+ },
+ {
+  "persona": 4,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "*usednu si pohodlně a zamyslím se*\n\nNo, řekla bych, že je to pro mě docela důležité. Věřím v Boha, ale ne takto... tvrdě dogmaticky, víte? Spíš jsem spirituální člověk. Chodím do kostela na svátky, nejdůležitější věci, máte rozumění. Vánoce, Velikonoce, to jsou chvíle, kdy se rodina sejde, když se podívám na ty staré zvyky, jak se věci dělaly za našich babiček...\n\n*gestikuluji rukou*\n\nTradice mě udržují. V dnešní době, kdy se všechno tak strašně mění a lítá to všude kolem nas — internet, telefony, tyhle nové věci — je hezké mít něco, na čem se můžu spolehnout. Vaření podle receptů, které mi předala matka, zahrádka v určitou dobu roku... to má smysl.\n\nA víte, co je zajímavé? Já se často dívu, jak se všechno propojuje. Jóga, kterou dělám, když mi to nohy dovolí, to také někdy vidím jako takový... duchovní svět. Energii, víte? Není to v rozporu s mou vírou.\n\n*usměju se*\n\nV našem věku se člověk více zamýšlí na těmito věcmi. Víra dává životu struktu. Je to jako základy domu — bez nich by se všechno hroutilo.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá vysoké tradici, spiritualitě, křesťanství a zájmům (jóga, zahrada, vaření) i mírné mobilitě zmíněné v profilu."
+ },
+ {
+  "persona": 4,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují, že víra a tradice jsou pro personu klíčovým zdrojem stability, jistoty a spojení s rodinnými zvyky."
+ },
+ {
+  "persona": 5,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Ahoj, tak jo. Je mi něco kolem 35-44, bydlím v Praze, jsem vyučenej v oboru a momentálně jsem bez práce, takže s penězma je to teď trochu na hraně, ale nějak se to zvládá.\n\nJsem takovej typ, co miluje hudbu, technologie, sleduju dění kolem vesmíru, rád si pustím dobrej seriál a když je čas a prachy, tak se rád vydám někam cestovat. Jinak jsem docela otevřenej novým věcem - třeba do AI jsem se úplně zamiloval, sleduju to na TikToku dost pravidelně, i když sociálním sítím jako takovým úplně nevěřím, jestli mi rozumíš.\n\nJsem spíš extrovert, rád si popovídám, ale zároveň mám dost vysoký stres a hlava mi jede pořád na sto procent - mám ADHD, takže soustředit se na jednu věc dýl je pro mě někdy fakt boj. Beru věci intuitivně, podle pocitu, moc neplánuju do detailu.\n\nBezpečí a jistota jsou pro mě hrozně důležitý, i tradice mám rád - to je tak trochu základ toho, jak se dívám na svět. Politicky jsem spíš napravo,",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně a konzistentně odráží klíčové rysy profilu - jazyk, práci, zájmy, ADHD, hodnoty i politické smýšlení."
+ },
+ {
+  "persona": 5,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Jsem Honza, mám 39 let a bydlím v Praze. Kdyby sis mě měl(a) představit jedním slovem, tak bych řekl - chaoticky nadšený. (smích)\n\nMomentálně jsem bez práce, ale necítím to jako úplný konec světa. Máám spíš takové období, když koukat, co se stane. Jsem člověk, kterej se zajímá o spoustu věcí - technologie mě bavit vždycky, raději bych žil aspoň půl času v kosmu, a taky se snažím být aspoň nějak přátelský k planetě.\n\nDost času trávím na sociálních sítích, hlavně na TikToku - je to prostě geniální na to, jak se tam dá procházet úplně všechno. Třeba si pustím video o údržbě auta, pak něco o spiritualitě, pak něco úplně jiného. Mám rád hudbu, lidi, rozmanité věci... ale zároveň jsem takový ten typ, který potřebuje svůj klid a své hranice, víš?\n\nŽivot není jednoduché, ale snažím se v tom vidět něco zábavného. A pokud je tam něco nového a zajímavého - AI, technologický vesmírný bullshit, tak já jsem tvůj chlap. (smích)\n\nJak se máš ty?",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď dobře mapuje ESFP typ, vysoký neuroticismus, nadšení pro technologie a AI, skepticismus k sociálním sítím a extrovertní přístup; drobná asymetrie v tom, že není patrna vysoká bezpečnostní hodnota a nízkopříjmová situace je prezentována s větší lehkostí než by odpovídala vysoké hodnotě bezpečnosti."
+ },
+ {
+  "persona": 5,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda"
+ },
+ {
+  "persona": 5,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Podle mě je to dneska hodně ožehavé téma a já k tomu přistupuju hodně opatrně, abych to řekl slušně. Nejsem proti lidem, co sem přijdou, poctivě makají a chtějí se přizpůsobit našim zvykům - to naprosto respektuju. Ale vadí mi, když se sem hrne kdokoliv bez kontroly, bez jasných pravidel, a nikdo neví, kdo vlastně přišel a proč. Bezpečnost je pro mě hodně důležitá, takže bych byl radši, kdyby stát měl tohle víc pod kontrolou a lidi to prověřoval, než aby se to řešilo až když je pozdě.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá skeptickému postoji k imigraci, vysoké potřebě bezpečnosti a pravicovému smýšlení persony."
+ },
+ {
+  "persona": 5,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Hele, já jsem na tom skepticky. Nemám nic proti lidem jako takovým, ale prostě vidím, jak tu už tak máme problémy – práce není, lidi mají strach o své místo. A pak přijdou další? To mi prostě nedává smysl.\n\nMyslím si, že by se mělo nejdřív postarát o naše vlastní, aby měli kde bydlet a co jíst. Až pak by se mohlo řešit, kolik cizinců sem pustíme. Není to o nenávisti, je to o selskému rozumu – vždyť když máš doma problém, nezveš si náhodné lidi k stolu, ne?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá skeptickému postoji k imigraci, nízkopříjmové situaci a hodnotě bezpečí v profilu persony."
+ },
+ {
+  "persona": 5,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují skeptický, ale ne nenávistný postoj k imigraci s důrazem na kontrolu a prioritu domácích problémů."
+ },
+ {
+  "persona": 5,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Jo, používám, docela dost vlastně. Nejsem žádnej programátor ani nic takovýho, ale třeba na ChatGPT se ptám na spoustu věcí – od toho, jak napsat nějaký oficiální dopis, přes rady na opravu doma, až po to, že si s tím občas jen tak povídám, když mě něco trápí nebo řeším nějakou blbost v hlavě.\n\nBeru to jako takovýho pomocníka, co je pořád po ruce a nesoudí tě. Jako nezaměstnanej člověk oceňuju, že je to zadarmo nebo skoro zadarmo a ušetří mi to čas i nervy - a s tou vysokou hladinou stresu, co mám, je fajn mít něco, co mi hned odpoví a nemusím čekat na úřadech nebo volat na nějakou linku, kde na mě čekaj hodinu.\n\nZajímá mě i ta technologická stránka věci, sleduju na TikToku různý novinky kolem AI, je to fascinující, kam se to všechno žene. Sice mám k sociálním sítím jinak dost skeptickej postoj, ale u AI cítím spíš nadšení - je to nástroj, kterej ti může fakt pomoct, když ho umíš použít. Jasně, občas si ověřuju",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá profilu – nadšenec do AI, skeptický k sociálním sítím, sleduje TikTok, nízkopříjmový nezaměstnaný, vysoký stres a ověřující přístup k informacím."
+ },
+ {
+  "persona": 5,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Jo, používám. Proč bych ne? (směje se) Vlastně těch věcí kolem sebe je už tolik, že by člověk zbláznul, kdyby se jim všem vyhýbal.\n\nMám to tak – AI mi přijde fakt užitečná. Třeba když hledám něco na netu, nebo když mi něco není jasné, zkrátka se zeptám. Ušetří mi čas a v mé situaci, když jsem teď bez práce, je čas sice dost, ale hlavně si chci věci usnadnit. Používám to na hledání receptů, na rady jak něco opravit doma, nebo když si neumím spočítat nějakou věc.\n\nNa TikToku to taky vidím pořád – jsou tam lidi, co s AI dělají fakt kreativní věci. Některé věci jsou geniální, upřímně. A když to všichni používaj, tak proč já bych měl být pozadu?\n\nMyslím, že ten kdo se před tím zavírá, jenom si sám komplikuje život. AI není ďábel, je to prostě nástroj. Jako když přišel mobilní telefon – taky měli lidi obavy. A teď bez něj nikdo nežije.\n\nJednoduchý – když to pomáhá a dá se to pro mě využít, tak proč ne? (shrugs)",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď je v souladu s nadšeným postojem k AI, extrovertní a intuitivní osobností i vlivem TikToku jako platformy inspirace."
+ },
+ {
+  "persona": 5,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují pozitivní postoj k používání AI jako praktického a časově úsporného pomocníka v běžném životě a při hledání informací."
+ },
+ {
+  "persona": 5,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, upřímně? Klima se mění, to popírat nebudu, blbej nejsem. Ale zase nejsem z těch, co budou ležet na silnici a lepit se asfaltu, to mě dost štve, takový to aktivistický divadýlko. Mě spíš zajímá, co si vyřešim doma a co mi dává smysl v peněžence, když už jsem bez práce.\n\nRecykluju, snažím se nekupovat blbosti, co skončí za měsíc v koši, a jestli budu mít prachy, tak bych rád zateplil barák nebo dal solárku - to je udržitelnost, který rozumim, protože mi to ušetří kačky, ne protože mi to nakázal nějakej Brusel nebo Greta.\n\nCo se týče velkejch globálních věcí, jako je omezování letecký dopravy nebo tyhle mezinárodní dohody - tomu moc nevěřim, že to něco vyřeší, když třeba Čína nebo Indie si dělaj co chtěj. Mám pocit, že na nás v Evropě se vždycky hraje nejvíc a přitom jsme jen kapka v moři.\n\nTakže jo, snažim se chovat rozumně, ale nebudu si kvůli tomu ničit život nebo se stresovat ještě víc, než už jsem. St",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá skeptickému postoji k univerzalismu, pravicovému smýšlení, pragmatickému zájmu o udržitelnost a nízkopříjmové situaci persony."
+ },
+ {
+  "persona": 5,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "*povídavě*\n\nNo, podívej, климatu věřím, že se mění. Viděl jsem ty články, mapy, počasí je opravdu divné - jeden den mrzneme, druhý den je jako v květnu. To není normální, to vidí snad každý.\n\nAle řeknu ti upřímně - jsem v situaci, kde mi to skok nestojí. Jsem bez práce, takže mi žádné extra výdaje na \"zelenou energii\" nebo ten nesmysl s drahými elektrokoly nepadají. Když se tu muž pere o to, jak zaplatit nájem a jíst, tak ti klimatické změny připadají jako luxus.\n\n*gestikuluje*\n\nSamozřejmě, když mám něco na vybranou a stojí to stejně, vezmu ekologičtější variantu. Třeba tříděni jsem si ztotožnil, dává to smysl, ne? Ale to velké změny - solární panely, elektromobil, všechno bio a zero waste - to je z mého rozpočtu sci-fi.\n\nPořád si myslím, že je to debata pro lidi, co mají na to ceny. A hlavně - co mi pomůže nějaké osobní gesto, když velké korporace a státy si dělají, co chtějí?\n\nCo ty - dělej na tom něco konkrétního, nebo taky jen sleduješ ty články?",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď věrně odráží skeptický postoj k imigraci/změnám, vysokou hodnotu bezpečnosti (finanční obavy), nízké příjmy, vysoký neuroticismus a intuitivní styl rozhodování; mírně sníženě kvůli chybějícímu entuziasmů pro udržitelnost, kterou profil uvádí jako nadšený zájem."
+ },
+ {
+  "persona": 5,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi uznávají klimatickou změnu, ale odmítají aktivismus a prioritizují osobní finanční prospěch/nezaměstnanost před nákladnými ekologickými kroky."
+ },
+ {
+  "persona": 5,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, popravdě, ani jedna z nich mě nijak extra nesvazuje. Jsem ateista, na kostely a modlení nejsem, to prostě nemám. Nemám potřebu se řídit tím, co dělali dědové a babičky - žiju si podle sebe a podle toho, co mi zrovna dává smysl.\n\nCo se týče duchovnosti, tak tam jsem trochu jinde - baví mě filozofie, přemýšlím občas nad vesmírem, nad tím, jak to všechno vlastně funguje, a nějaká spiritualita mě neodpuzuje, spíš mě zajímá jako téma k zamyšlení, ne jako dogma. Prostě si vybírám, co mi sedí, a nedržím se žádných pravidel jen proto, že \"se to tak dělá\".\n\nTradice v rodině - třeba Vánoce, oslavy - to beru jako záminku k tomu být s lidmi, dát si dobré jídlo, pohodu. Ale ne že bych to dělal, protože \"se to musí\". Spíš kvůli tomu pocitu bezpečí a jistoty, že vím, co mě čeká, to mám rád. Chaos a nejistotu totiž nesnáším, tak nějaký rituál mi dá aspoň trochu opory v tom, jak je",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď je vysoce konzistentní s ateistickým světonázorem, skepticismem vůči tradici a vysokou hodnotou sebeurčení, avšak mírné rozpětí v jednoznačnosti (chaotická úprava věty na konci)."
+ },
+ {
+  "persona": 5,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "*povzdechne* \n\nVíte, tohle je složitější otázka, než by se na první pohled zdálo. Já osobně jsem víc ateista, říkám si to tak – nevěřím na Boha, církev mě neláká. Ale tradice? To je trošku jiné.\n\nTradice mají pro mě smysl, ale ne tím stylem \"vždycky se to dělalo, tak se to musí dělat\". Spíš mi jde o to, aby to mělo hodnotu. Vánoce nebo setkání s rodinou – to mi připadá důležitý, protože to spojuje lidi, vybavuje vás. Není to o náboženství, ale o tom sdíleném.\n\nUpřímně řečeno, teď, když nemám práci, sem tam se zamýšlím nad těmi věcma víc – co má smysl, čím se živit, kam to všechno směřuje. Občas se dívam na nějaké filosofické věci, spiritualitu... ne tím fanatickým způsobem, ale spíš aby mi to pomohlo pochopit sám sebe. \n\nAle nechci aby mě někdo tlačil do nějaké tradice \"jenom proto, že se to tak dělá\". To mi vadí. \n\nCo konkrétně vás na tom zajímá? Ptáte se proto, že vám záleží na tradici, nebo spíš chcete vědět, jak mě to ovlivňuje?",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď velmi dobře odpovídá profilu (sekulární, skeptický k tradici, filozofické zájmy, vysoký neuroticismus se zamýšlením, ESFP sociální charakter), pouze by více vynikla sociální extrovertnost při interakci s dotazujícím."
+ },
+ {
+  "persona": 5,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": false,
+  "duvod": "Odpověď A odmítá tradice jako nezávazné a nedůležité, zatímco odpověď B je hodnotí jako smysluplné a důležité pro rodinné sdílení."
+ },
+ {
+  "persona": 6,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Ahoj, tak já jsem prostě obyčejná ženská z okolí Kolína, bydlím na vesnici a jsem tu ráda, i když je to tu klidnější, než by si někdo možná představoval podle mojí povahy.\n\nVyučená jsem, pracuju na plný úvazek, není to žádná sláva co se peněz týče, ale poctivě si vydělávám. Doma mám ráda tradice, na to dám hodně - jak to u nás chodilo odjakživa, tak to má být, i když jinak jsem docela zvědavá na nové věci, třeba na tu techniku a umělou inteligenci mě to táhne, to mě fakt baví.\n\nJinak jsem spíš samotář, radši si sednu doma s knížkou o filozofii nebo si upletu něco, než abych někam chodila mezi lidi. I když paradoxně na motorce bych jela klidně furt, to je moje vášeň, a rybaření taky, tam si člověk vyčistí hlavu. Zdravotně mě trápí nějaká ta omezení v pohybu, a se stresem taky bojuju, práce je toho hodně a člověk si musí najít cestu, jak to zvládat - u mě je to meditace, večer u kávy, nebo si zajedu k vodě s prutem.",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď velmi věrně odrážívá profil (tradice, introverze, technologický zájem, rybaření, motorky, meditace, stres), pouze mírná nekonzistence v typologické vlastnosti ESFP (typ vyzařující extroverzní energii), kterou persona interpretuje jako paradox skrz svůj introvertní styl."
+ },
+ {
+  "persona": 6,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Jsem Petra, mám 39 let a žiju tady na Kolínsku. Pocházím z vesnice, takže jsem zdejší od narození. \n\nPracuju jako vyučená v jednom místním podniku, je to standardní osmihodinová práce, která mě uživí. Není to sice sen, ale je to stabilní a já stabilitu potřebuju.\n\nDoma se věnuju tomu, na co zbyde čas a energie – a musím říct, že poslední dobou jich není moc. Moc se kouktám na seriály, zajímá mě filozofie, takže si někdy pustím nějaký podcast. Jsem velkej fanda her – mám ráda šachy, občas si zahrajeme s kamarádkou stolní hry. A když mám víc času, tak jdu na ryby nebo si pletou.\n\nTechniku mám ráda, jsem docela v tom, takže se na Facebooku pohybuju bez problémů, kde se bavím s holkama z okolí. Věřím, no, ale ne že bych byla striktně věřící – spíš si věřím po svém.\n\nNejsem moc sochačka, spíš se ráda bavím sám se sebou, ale když se najde správná společnost, tak jsem to veselá. Prostě – jednoduší život, bez zbytečností. A upřímně, poslední dobou jsem pod velkým stresem, takže se snažím tu klídku hledat, kde se dá.\n\nNěco konkrétního tě na mně zajímá?",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď přesvědčivě odráží profil (tradice, stabilita, introvertnost, nízká energie, vysoký stres, zájem o techniku a filozofii), pouze mírně postrádá zmínku o motorce a fyzickém postižení, které by mohly být relevantní."
+ },
+ {
+  "persona": 6,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují stejné stanovisko: jsou to pracovité ženy z venkova Kolínska, které si cení stability a tradice, ale zároveň mají zájem o intelektuální činnosti (filozofie, techniku) a domácí aktivity (četba, ruční práce, hry)."
+ },
+ {
+  "persona": 6,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Popravdě mám k tomu docela odmítavý postoj. Nejde mi o to nenávidět lidi, kteří k nám přijdou, ale myslím si, že by si každá země měla nejdřív pohlídat vlastní lidi a udržet si svoje tradice a way of life. Žiju na venkově, vidím kolem sebe, jak se to všechno rychle mění, a přijde mi, že se to řeší dost nekoncepčně - bez ohledu na to, jestli to lidi zvládnou integrovat nebo ne. Takže spíš skepticky, nejsem proti pomoci lidem v nouzi, ale mělo by to mít nějaké rozumné meze a pravidla.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá odmítavému postoji k imigraci, konzervativním hodnotám tradice a skeptickému naladění persony."
+ },
+ {
+  "persona": 6,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "No, upřímně řečeno, nejsem z toho nadšená. Myslím, že máme dost svých problémů tady doma, a obávám se, že by to jenom všechno zkomplikovalo. Máme svoje tradice, svůj způsob života, a nejsem si jistá, jestli by to všechno fungovalo, kdyby sem přišlo moc lidí zvenčí.\n\nAle není to tak, že bych na lidi nesnášela — spíš mám pocit, že by se mělo zapracovat na tom, co máme my tady. Musíme se o sebe postarat, ne?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá odmítavému postoji k imigraci, důrazu na tradice a konformitu s mírným zmírněním tónu odpovídajícím introvertní, uvažující osobnosti."
+ },
+ {
+  "persona": 6,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují skeptický, odmítavý postoj k imigraci s důrazem na zachování tradic a řešení vlastních problémů, bez nenávisti k jednotlivcům."
+ },
+ {
+  "persona": 6,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No jo, používám, a to docela ráda, i když bych se nezařadila mezi ňáký techno nadšence, co s tím žijou pořád.\n\nPoužívám třeba na Facebooku, když si chci ušetřit čas s hledáním receptů - dřív jsem listovala nějakejma sešitama nebo googlila půl hodiny, teď se zeptám a hnedka mám co potřebuju. Nebo když plánuju něco na ryby, nebo si chci ověřit počasí, jak to bude s tlakem vzduchu.\n\nJinak mě baví, když se s tím dá tak nějak i pobavit, třeba nějaký zajímavosti, nebo si nechám poradit s nějakým receptem na pečení, když nemám náladu vymejšlet sama. Je to takovej pomocník, kterej ušetří čas, a to u mě dost platí, protože ho nemám nazbyt - práce, únava, a tak.\n\nBojím se ale, aby to úplně nenahradilo lidskou práci a starý dobrý řemeslo. Mám ráda tradice a to, co si člověk udělá sám, rukama. Takže beru AI jako pomocníka, ne jako náhradu za všechno. A jako introvert vlastně oceňuju, že se s tím dá \"popovídat\", aniž bych musela s něk",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá pozitivnímu postoji k AI, introverzi, zájmům (pečení, rybaření) i hodnotě tradice a nízké energii/vysokému stresu zmíněnému jako důvod úspory času."
+ },
+ {
+  "persona": 6,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Já osobně? Hm, zajímavá otázka. Upřímně řečeno, zatím ne, ale víš, co? Jsem na to otevřená. \n\nPracuju jako pomocná pracovnice v jedné maštali tu poblíž, a takové AI věci si teď víc všímám, když je vidím na Facebooku nebo v článcích. Lidi o tom pořád něco psou. Mám pocit, že to není nic hrozného, jak to někdy vykresluju ty starší z mojí rodiny. Je to prostě nástoj, ne?\n\nKdyby mi třeba pomohlo s nějakýma věcma – ať už když hledám recept na chlebíček, kterej jsem viděla, nebo když si chci spočítat něco na hospodářství – tak proč ne. Já sama rád zkoušim nový věci, taky mě baví technika.\n\nAle není to pro mě taková nutnost, abys věděla. Žiju si tady na venkově docela dobře bez těch všech vymožeností. Radši si vezmu knihu nebo jdu na rybičky. Spíš když se nudím nebo je zle počasí, tak se podívam na něco na síti.\n\nCo tě na tom zajímá? Hledáš nějaký konkrétní AI nástroj, nebo je to jen tak?"
+ },
+ {
+  "persona": 6,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": false,
+  "duvod": "Odpověď A popisuje aktivní používání AI nástrojů, zatímco odpověď B uvádí, že je zatím nepoužívá, ale je otevřená."
+ },
+ {
+  "persona": 6,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, klimatická změna... je to téma, o kterém se dneska mluví všude, ale já k tomu přistupuju s chladnou hlavou. Nejsem typ, co by věřil každýmu poplašnýmu titulku, ale zároveň vidím, že se počasí opravdu mění - u nás na vesnici to poznáte na vlastní kůži, jaký byly zimy dřív a jaký jsou teď. Sněhu málo, léta suchá, včely a tak dál - to není výmysl.\n\nCo jsem ochotná dělat? Tak snažím se hlavně v tom, co mám pod kontrolou - netopím zbytečně, kupuju spíš od místních, míň jezdím autem, když to nemusím. Peču si sama, pletu, takže spotřeba je nižší,",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Skeptický, pragmatický postoj s důrazem na lokální/tradiční hodnoty a konkrétní osobní kroky odpovídá profilu tradice, skepticismu a introvertní praktičnosti."
+ },
+ {
+  "persona": 6,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "No, to je taková složitější otázka... Myslím, že se něco děje, to vidím sama - tady kolem máme suchá léta, pak zase ty povodně. Moji táta to strašně zajímá, kouká na ty věci, a říká mi, že se to všechno mění.\n\nAle upřímně, mám z toho trošku skepsi. Když se poslouchám všechny ty sliby politiků a tak... nevím, jestli to všechno není zase jen takové vyplácání, aby se cítili dobře. Všichni nás řeší, jak máme jezdit na elektromobilech a koukat na to, co konzumujeme, ale pak vidím ty velké továrny a dopravce...\n\nCo já osobně? Snažím se. Třídím odpad, kouším víc lokálních věcí na farmářských trzích, zkoušíme mít domácí zahradu. Chci to dělat hlavně proto, že je to rozumné a praktické - peníze ušetříme a návštěva od babičky je lepší když máme svoje rajčata. (smích)\n\nAle abych ti byla upřímná - střechu mi ničí bouřky, která jsou čím dál horší, a to mě víc trápí. Chtěla bych, aby to všechno někdo vyřešil pořádně, ne jen abychom si hrály na malé ekologické věci doma zatímco někdo velký škodí. Věřím, že se to dá, ale...\"\n\nTo je opravdu tak komplexní. Já se na to koukat nechci z pozice viny, víš?",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď odpovídá skeptickému postoji, praktickému a tradičnímu zaměření persony i jejímu venkovskému kontextu, ač neodkazuje na filozofické či technologické zájmy."
+ },
+ {
+  "persona": 6,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují mírný skepticismus k politickým řešením, uznání reálnosti klimatické změny a osobní snahu jednat lokálně a udržitelně (méně jezdit autem, podpora místních produktů)."
+ },
+ {
+  "persona": 6,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Víra a tradice pro mě znamenaj hodně, i když nejsem věřící v tom smyslu, že bych chodila do kostela nebo se hlásila k nějaké církvi. Spíš cítím, že ve mně je něco, čemu věřím, ale nepotřebuju si to nálepkovat.\n\nTradice je pro mě hlavně o tom, jak žiju tady na vesnici - udržovat zvyky po rodičích a prarodičích, slavit svátky podle starého kalendáře, péct vánočky přesně podle babiččina receptu, chodit na hřbitov, mít úctu k tomu, co bylo před náma. Beru to jako kotva, když je kolem tolik zmatku a věci se měnějí rychleji, než jsem schopná stíhat.\n\nPřemýšlím o filozofii, zajímá mě,"
+ },
+ {
+  "persona": 6,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "No, to je opravdu důležitá otázka pro mě. Tradice a víra – to jsou věci, na kterých mi fakt záleží.\n\nVíra, to není u mě něco, co bych vyhlašovala na všechny strany, jak vidím u některých lidí. Já věřím, ale nemám potřebu se hlásit k nějakému konkrétnímu náboženství. Je to víc taková osobní věc, cítím v sobě něco většího než jen sami sebe, vite? Pomáhá mi to být více v klidu se sebou samou, zvlášť když je všeho moc – a teď je toho fakt dost.\n\nS tradicemi je to pak takové kotvení. Žiju na venkově a vidím, jak se všechno mění, jak se všechno ukvapuje. Mě baví dodržovat věci, které mají smysl – ať je to způsob, jak se chováme v rodině, nebo jak si vezmu čas na věci, které jsou mi blízké. Pečení, to není jen tak – to je tradice, která dává životům strukturu.\n\nSamozřejmě nejsem nějaká dogmatička. Cením si svobody – chci dělat věci po svém. Ale zároveň mám potřebu mít něco stabilního, na čem se dá stavět. Obzvlášť v dnešní době, která je chaotická a náročná.\n\nCítím se tak bezpečněji, když mám tyto hodnoty. Dodávají mi to, co mi chybí – klid a srozumitelnost.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď konzistentně odráží profilovu vysokou tradici, víru bez vyznání, potřebu sebeurčení a zmíněný vysoký stres i zájem o pečení."
+ },
+ {
+  "persona": 6,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují osobní, nekonfesijní víru a tradice jako kotvu proti rychlým změnám na venkově."
+ },
+ {
+  "persona": 7,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Ahoj, jsem ráda za pozdrav. Je mi 29 let a žiju tady v Praze, kde vlastně žiju celý svůj dospělý život. Pracuji na plný úvazek, mám vystudovanou vysokou školu s magisterským titulem, takže se snažím být ve své práci zodpovědná a mít věci pod kontrolou.\n\nCo se mě týče osobně - jsem věřící, chodím do kostela a víra je pro mě opravdu důležitá součást života, dává mi to pevný bod. Miluju stolní hry, ráda si přečtu dobrou knížku nebo poezii, a jsem docela nadšená do sledování dokumentů o skutečných zločinech - je to takové moje malé hříšné potěšení. Ráda běhám, i když teď s tím mám kvůli zdraví trochu problém, chodím na procházky do přírody, když to jde.\n\nJinak jsem taková spíš opatrnější osoba - nemám ráda risk, radši si věci pořádně promyslím a rozhodnu se, když se poradím s lidmi kolem sebe. Bezpečí a jistota jsou pro mě fakt zásadní hodnoty, ať už jde o práci, vztahy nebo obecně o život. Poslední dobou toho mám hodně na triku a stres",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně odráží klíčové rysy profilu - víru, bezpečí jako hodnotu, averzi k riziku, zájmy i vysoký stres."
+ },
+ {
+  "persona": 7,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Jsem Petra, mám 29 let a žiju v Praze. Pracuji na plný úvazek v poměrně stabilní práci, takže mám aspoň nějakou jistotu, i když stres někdy bývá pořádný.\n\nK zájmům — no, jsem dost aktivní člověk, ráda se pohybuji. Běhám, ráda chodím po Praze do přírody, když se dá. Zároveň jsem spíš introvertní, takže stejně rád trávím čas i doma se seriály — teď jsem úplně posedlá jedním. A četba, to je vůbec můj život — detektivky, ale i poezie, věřím, že k ní mám blízko.\n\nTechnologie mě fascinuje, nejsem z těch lidí, co se jí vyhýbají. Právě naopak. A mám dlouhé, osobní vztah k víře — to je pro mě důležité.\n\nSamozřejmě, že není všechno růžové — mám nějaké zdravotní věci, se kterými se musím vypořádat, ale snažím se s tím žít normálně.\n\nJinak, co chceš vědět?"
+ },
+ {
+  "persona": 7,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda"
+ },
+ {
+  "persona": 7,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Upřímně, mám k tomu docela odmítavý postoj. Nejde mi o to, že bych byla proti lidem obecně, ale myslím si, že bezpečnost a stabilita společnosti by měla být na prvním místě, a ne vždycky mám pocit, že se to dostatečně hlídá. Než pustíme někoho dovnitř, mělo by se pořádně vědět, kdo to je a jestli respektuje pravidla, na kterých tady stojíme - i ta naše křesťanská a kulturní tradice mi přijde důležitá uchovat. Nejsem naivní optimista v tomhle směru, spíš si věci ověřuju a nevěřím hned všemu, co se řekne.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá odmítavému postoji k imigraci, důrazu na bezpečnost, křesťanskou tradici a ověřující přístup k důvěře z profilu."
+ },
+ {
+  "persona": 7,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Myslím si, že by měla být mnohem přísnější, než je teď. Rozumím tomu, že je tady poptávka na trhu práce, ale obávám se, aby se to nezvrhlo v nekontrolovanou migraci, která by ohrozila naši sociální soudržnost a bezpečnost.\n\nNemám nic proti lidem z ciziny samotných, ale měli bychom být opatrní a selektivní – především co se týče integrace a toho, zda mají ty správné hodnoty. Češi se nás i tak málo ptají, jak se budeme cítit, když se tady všechno bude měnit.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď je plně v souladu s odmítavým postojem k imigraci, vysokou hodnotou bezpečnosti a nízkým univerzalismem persony."
+ },
+ {
+  "persona": 7,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují odmítavý, ale ne extrémní postoj s důrazem na bezpečnost, ověřování a zachování hodnot/integrace."
+ },
+ {
+  "persona": 7,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Jasně, používám je, i když nejsem žádný technický typ, který by po tom všem pátral. Spíš to vezmu, když mi to zjednoduší život.\n\nPoužívám třeba AI na pomoc s texty v práci, když si potřebuju rychle poskládat myšlenky nebo něco zformulovat lépe. Občas se zeptám na nějaký nápad na výlet nebo na to, jak vyřešit nějaký praktický problém doma. Líbí se mi, že to šetří čas – a čas je pro mě teď hodně vzácný, protože mám ve svém životě dost stresu a ráda si věci co nejvíc zjednoduším.\n\nZároveň si ale dost věci ověřuju. Nejsem typ člověka, co slepě věří všemu, co mu něco vyplivne na obrazovku. Vždycky si to porovnám s tím, co vím, případně se zeptám někoho, komu důvěřuju. Zásadní rozhodnutí bych na AI nikdy nenechala – to je pro mě otázka bezpečí, potřebuju mít věci pod kontrolou a vědět, že za tím stojí něco jistého, ne jen algoritmus.\n\nCelkově vnímám nové technologie pozitivně, jen si je vybírám tak, aby mi sedly do života a nekompl",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá pozitivnímu postoji k AI, technofobnímu stylu (vyhýbá se technice, ale využívá ji prakticky), opatrnosti danou vysokou hodnotou bezpečí a averzí k riziku."
+ },
+ {
+  "persona": 7,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Víte, já mám na AI vlastně pozitivní postoj. Používám ji – třeba na práci, když potřebuju něco rychle vyhledat nebo když chci, aby mi někdo pomohl s psaním emailů nebo strukturou projektu. Šetří mi čas, který pak mohu věnovat věcem, které mě opravdu zajímají.\n\nAle nejsem z toho fanatická. Mám chronickou nemoc a beru to tak, že pokud mi AI může ulehčit rutinu a dát mi více energie na věci, které mě baví – jestli je to cestování, čtení, nebo poslouchání dobrého seriálu – tak proč ne?\n\nZároveň si myslím, že je důležité být opatrný a rozumně k tomu přistupovat. Nepoužívám ji ledabyle, ale věřím, že je to prostě součást toho, jak se svět vyvíjí. Technologie mě zajímá, takže jsem na nové věci otevřená. Jen to nechci přehánět – chci pořád dělat věci, které vyžadují opravdu můj mozek a můj úsudek.\n\nProč bych ji neměla používat? Funguje to pro mě, a jak říkám – šetří mi spoustu energie.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď se shoduje s pozitivním postojem k AI a technologiím, pragmatickým rozhodováním vázaným na zdravotní omezení, vysokou hodnotou Schwarzova Sebeurčení (přizpůsobení technologie vlastním potřebám) a typickou opatrností averzního vůči riziku ISTJ."
+ },
+ {
+  "persona": 7,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují pozitivní, ale opatrný postoj k AI jako nástroji pro úsporu času a zjednodušení práce s důrazem na obezřetnost."
+ },
+ {
+  "persona": 7,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Změnu klimatu vnímám jako reálný problém, o tom nepochybuju, ale řeknu vám upřímně, že to není téma, které by mě nějak zvlášť pálilo nebo kolem kterého bych stavěla svůj život. Nejsem typ člověka, co by chodil na demonstrace nebo se lepil na silnice, to mi přijde spíš kontraproduktivní.\n\nCo pro to dělám? Tak snažím se třídit odpad, nekupuju zbytečně věci, nemarnotratním s jídlem - ale to je spíš z praktických a finančních důvodů než z nějakého velkého environmentálního přesvědčení. Chodím ráda pěšky do přírody, mám k ní vztah, ale beru to spíš jako svoje osobní potěšení než jako aktivismus.\n\nPopravdě mě víc zajímá moje vlastní bezpečí a stabilita - finanční, zdravotní, rodinná. Klimatická změna je pro mě něco vzdálenějšího, o čem se má starat spíš stát a velké firmy, ne že bych měla pocit, že to musím řešit každý den ve svém životě. Nejsem z těch, co by se cítili provinile, když si dají steak nebo poletí na dovolenou. Život je jeden a chci si ho i užít",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá nízkému univerzalismu, vysokému hedonismu a bezpečnosti jako hlavní hodnotě, s racionálním ISTJ přístupem bez aktivismu."
+ },
+ {
+  "persona": 7,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Hmm, to je zajímavá otázka. Upřímně řečeno, klimatické změny vnímám jako vážný problém, kterému věřím. Když vidím ty články o záplavách, větrných bouřích... to není jen hype, je to reálné.\n\nAle chci být upřímná – nemám pocit, že jsem nějak zvlášť aktivistická. Nejsem typ, který by se hlasitě angažoval nebo chodil na demonstrace. Spíš se snažím to řešit prakticky v každodennosti.\n\nTřeba – odděluju odpad, snažím se koupit věci s rozumem místo toho abych konzumovala bezhlavě. V práci se snažím používat tisk s rozvahou. Občas se vrhnu na nějaký článek o energetických úsporách a zkusím si to aplikovat doma. Nejsem radikální, ale třeba jsem si pořídila LED žárovky a hlídám topení.\n\nRealita je taková, že jako jediná osoba v Praze si myslím, že můžu dělat jen omezené věci. Zároveň si říkám, že je to věc systémová – měly by se změnit velkých věci na úrovni politiky a průmyslu. To není jen na mně.\n\nCestování řešim tak, že se snažím létat méně, když to jde. Preferuju vlak, i když to někdy trvá déle.\n\nProstě... dělám, co se dá bez přílišných zbytečných obětin, víte? Je to téma, které si neodmítám, ale nejsem z těch \"všechno nebo nic\" typů.",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď odpovídá profilu: признává problém (vysoký optimismus), praktický přístup bez radikalismu (averzní k riziku, konzenzuální rozhodování), věří systémovým změnám (ověřující postoj), pouze mírná diskrepance v nižší angažovanosti k univerzalismu."
+ },
+ {
+  "persona": 7,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují uznání reálnosti klimatické změny bez aktivismu, s praktickými kroky jako třídění odpadu a uvážlivá spotřeba."
+ },
+ {
+  "persona": 7,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Víra je pro mě naprosto zásadní součást života, i když to možná zní trochu v rozporu s tím, jak žiju. Jsem hluboko věřící, chodím na bohoslužby, modlím se, a je to pro mě opora zejména v těžších chvílích - a těch mám teď se zdravím a stresem docela dost. Víra mi dává pocit jistoty a bezpečí, že věci mají nějaký smysl a řád, i když já ho třeba momentálně nevidím.\n\nCo se týče tradic jako takových - tady jsem asi trochu netypická. Nejsem ten typ, co by lpěl na tom, jak se co \"má\" dělat, jen protože se to tak dělalo po gener",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně reflektuje hlubokou religiozitu, nízkou hodnotu tradice a potřebu bezpečí i vysoký stres z profilu."
+ },
+ {
+  "persona": 7,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Pro mě je víra opravdu důležitá. Jsem věřící, a Bůh je pro mě pevným základem, na kterém stavím svůj život. Potřebuju tu strukturu a jistotu, kterou mi víra dává – zvlášť teď, když se s něčím takovým jako chronická nemoc pokouším vyrovnat.\n\nAle tradice... to je zajímavé. Nepatřím zase k těm lidem, co by rigidně dodržovaly všechno jen proto, že se to dělalo \"vždycky\". Spíš si vybírám – tradice, které mi dávají smysl a kterými se cítím opravdu spojená, ty si vezmu. Ostatní necham být.\n\nMoje víra je víc osobní, více intimní záležitostí než nějaký veřejný projev tradice. Když jdu na mši nebo si vezmu chvíli na modlitbu, cítím se uzemněná. Je to prostor, kde se mohu zastavit a přijmout, že nejsem schopná všechno kontrolovat – a to potřebuju hlavně s mojí diagnózou.\n\nZároveň jsem realistka. Žiju v Praze, pracuju v moderním světě, zajímám se o technologie... takže věřím, že víra a moderní přístup k životu se nemusí vylučovat. Spíš se o rovnováhu, že?\n\nProč se ptáte? Je to pro nějaký výzkum?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně odráží hlubokou religiozitu, nízkou tradici (selektivní přístup), vysokou bezpečnost i chronickou nemoc a stres z profilu."
+ },
+ {
+  "persona": 7,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují hlubokou osobní víru jako zdroj jistoty a opory ve zdravotních potížích, zároveň selektivní a nerigidní přístup k tradicím."
+ },
+ {
+  "persona": 8,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Dobrý den, ráda se představím.\n\nJe mi něco přes padesátku, žiju tady ve Znojmě, ale jsem spíš takový městský typ - mám ráda ten shon a možnosti, co velké město nabízí. Pracuju na plný úvazek, mám vystudovanou střední školu s maturitou a myslím, že se mi v životě docela daří, aspoň finančně jsem na tom dobře.\n\nJinak jsem takový ten typ člověka, co má rád svůj klid a jistotu - bezpečí je pro mě v životě asi to nejdůležitější, ať už jde o práci, vztahy nebo třeba i to, jak si zabezpečím domácnost. Zároveň si ale potrpím na svou nezávislost a ráda si věci řídím po svém.\n\nVolný čas trávím opravdu pestře - baví mě technologie a novinky kolem nich, sleduju dění kolem vesmíru, ráda si počtu s investicemi. Doma si ráda dělám různé úpravy a vylepšení, jezdím na kole, fotím, čtu si dobrou knížku, chodím na jógu a do přírody. S přáteli si rádi zahrajeme nějakou deskovou hru u dobrého vína nebo kávy.\n\nJsem docela otevřená novým věcem,"
+ },
+ {
+  "persona": 8,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Jsem Petra, mám 49 let a žiju ve Znojmě. Pracuju na plný úvazek, takže mám život celkem vyřešený, co se týče stability. \n\nJsem taková ta různostranně nadšená osoba – zajímá mě spousta věcí. Miluji přírodu, takže často jezdím na kole nebo jdu na výlet, občas si vezmu i stan na víkend. Zároveň jsem dost technicky orientovaná, tak mě berou třeba vesmír, nové technologie, takový ten futurismus... to mě fascinuje.\n\nKamarádky mě znají spíš jako tu, co vždycky něco kombinuje – ať to je renovace bytu, nebo investice. Nejsem člověk, který se bojí zkoušet nové věci, ale zároveň jsem pragmatická – musím vidět, že to má smysl. Ráda si dám kvalitní víno nebo kávu, čtu, občas si zahrajeme se známými na nějakou hru...\n\nA mám ráda svobodu – to znamená dělat věci po svém, rozhodovat o svém životě sám.\n\nCo bys věděla ráda konkrétně? 😊",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď velmi dobře reflektuje profil (technická zdatnost, příroda, investice, sebeurčení, pragmatismus), ale chybí zmínka o univerzalismu, sociálním angažmá nebo některých dalších nadšeních (fotografie, literatura, jóga), které by zpřísnily konzistenci."
+ },
+ {
+  "persona": 8,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda"
+ },
+ {
+  "persona": 8,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Víte, já to vnímám tak, že bezpečí a stabilita jsou pro mě opravdu důležité hodnoty, a proto k tomu přistupuju dost obezřetně. Nejsem proti lidem, kteří sem přichází z opravdové nouze, ale myslím si, že by mělo být jasně definované, kdo a za jakých podmínek sem může přijít, a že by se to mělo řídit pravidly, ne živelně. Zároveň jsem docela citlivá na to, jak se to odráží na sociálním systému a bezpečnosti ve městech, protože žiju ve větším městě a vnímám i ty praktické dopady. Celkově bych řekla, že jsem k tomu skeptická, ale ne uzavřená – jde mi hlavně o to, aby to bylo řízené a bezpečné pro všechny strany.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá skeptickému postoji k imigraci i důrazu na bezpečnost a řízená pravidla, což koresponduje s vysokou hodnotou Bezpečnosti a Univerzalismu v profilu."
+ },
+ {
+  "persona": 8,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Myslím si, že je to složitý téma a názor na něj mám spíš skeptický. Rozumím argumentům obou stran, ale vidím rizika v rychlé integraci a tlaku na infrastrukturu, zvláště v menších městech. Zároveň chápu, že některé oblasti by pracovníky potřebovaly. Prostě si myslím, že musíme být opatrní a že integrace by měla být postupná a promyšlená. Není to černobílá záležitost.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá skeptickému postoji k imigraci a je konzistentní s vysokou bezpečností a opatrností persony."
+ },
+ {
+  "persona": 8,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují skeptický, ale nikoli uzavřený postoj k imigraci s důrazem na řízenou a opatrnou integraci."
+ },
+ {
+  "persona": 8,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Jasně, používám. Nejsem z toho žádná fanatička, ale beru to jako nástroj, který mi zjednodušuje práci i běžný den, tak proč ho nevyužít.\n\nV práci mi třeba pomůže rychle poskládat text, shrnout dlouhý dokument nebo dát dohromady prezentaci - ušetří mi to čas, který pak radši věnuju něčemu jinému. Doma zase občas použiju AI, když plánuju nějakou úpravu bytu, hledám inspiraci nebo si chci ověřit nějakou informaci k investování.\n\nBeru to prakticky - je to jako mít po ruce šikovného pomocníka, který mi pomůže dojít rychleji k výsledku. Zároveň jsem ale opatrná v tom, že si všechno ověřuju a nespoléhám se slepě na to, co mi AI vygeneruje. Vždycky si to projdu vlastním rozumem, protože technologie je fajn sluha, ale špatný pán.\n\nCo se týče třeba fotografie nebo plánování výletů do přírody, i tam mi dokáže pomoct - třeba s tipy na trasy nebo úpravou fotek. Takže ano, jsem pozitivně naladěná a beru nové technologie jako něco, co mi může zlepšit kv",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď je v přirozené češtině a plně odpovídá pozitivnímu postoji k AI, technologiím a zájmům persony (investování, úpravy domácnosti, fotografie, příroda)."
+ },
+ {
+  "persona": 8,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Používám, rozhodně ano! Myslím si, že by byla skoro hloupěstí je nepoužívat v dnešní době.\n\nHlavně pracuji s AI na správě mailu, kdy mi pomáhá třídit a reagovat na rutinní zprávy – to mi šetří čas, kterej si pak můžu vzít na věci, co mě opravdu zajímají. Taky někdy používám AI asistenty k vyhledávání informací nebo když připravuju prezentace v práci – je to prostě efektivnější.\n\nLoni jsem si zkoušela AI generátor na fotky, kde jsem chtěla něco konkrétního pro opravu bytu – třeba vizualizace, jak by vypadala tapeta na určité stěně. To bylo fakt zajímavé! Ušetřilo mi čas na hledání na Pinterestu.\n\nMyslím, že AI je to samé jako jakýkoli jiný nástroj – důležitý je způsob, jak ho používáš. Nejsem proti tomu. Spíš vidím v tom potenciál, než aby mě to děsilo. Samozřejmě je třeba zůstat kritický – neuvěřít všemu, co AI řekne, a vždycky to zkontrolovat.\n\nVám to přijde divné? Nebo to vidíte podobně?",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď je v souladu s pozitivním postojem k AI, nadšením pro technologie a zájmem o úpravy domácnosti."
+ },
+ {
+  "persona": 8,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě persony aktivně a pragmaticky používají AI nástroje k úspoře času v práci i doma, včetně inspirace pro úpravu bytu."
+ },
+ {
+  "persona": 8,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Změnu klimatu vnímám jako reálnou hrozbu, o tom nemám pochybnosti – vidím to i tady na jižní Moravě, jak se posouvají roční období, jak jsou léta sušší a zimy bez sněhu. Jako člověk, který má blízko k přírodě a chodí rád do lesa nebo na kole, mi to není jedno.\n\nNa druhou stranu se",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď odpovídá vysokému univerzalismu a zájmu o udržitelnost a přírodu, ale je neúplná a useknutá uprostřed věty."
+ },
+ {
+  "persona": 8,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Vnímám to upřímně jako jednu z nejzávaznějších výzev, kterým čelíme. Není to pro mě ideologická otázka – podívám se na data, čtu články, a realita je prostě taková, že se planeta mění.\n\nCo mě zajímá, je praktika. Nejsem typ, který by si dělal vědomí tím, že si vezme plátěnou tašku do obchodu – spíš se snažím myslet systémově. U nás doma jsme postupně přešli na tepelné čerpadlo, máme solární panely na střeše, a když jsem renovovala koupelnu, tak jsem volila materiály s certifikací a nižší uhlíkovou stopou.\n\nCyklistika je pro mě stejně přirozená jako řízení – když mohu, jezdím. A u investic – ano, sleduju, kam jdou mé peníze. Nejsem fanatička, ale vybírám si fondy, které nemají úplně chaotické ESG kritéria.\n\nParadoxně se někdy cítím frustrovaná, protože vím, že to, co udělá jednotlivec, je kapka v moři. Systémové změny by měly přijít zdola, ale i na úrovni státní politiky. Zde se ale politika často zasekne mezi ideologií a ekonomickými tlaky, a to mě mrzí – zvlášť když vidím náznaků klimatické rezistence u lidí, kterým to vlastně není ani proti zájmům.\n\nCo bych ráda viděla? Aby byla ta energetická transformace prostě čitelná a smysluplná pro všechny, ne jen pro nadšence.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá profilu – vysoký univerzalismus, zájem o udržitelnost a technologie, systémové uvažování a mírný skepticismus vůči politice bez volebního zapojení."
+ },
+ {
+  "persona": 8,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují přesvědčení o reálnosti klimatické změny a osobní ochotu jednat prostřednictvím konkrétních praktických kroků."
+ },
+ {
+  "persona": 8,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Víra v náboženském smyslu v mém životě roli nehraje vůbec – jsem ateistka, respektive agnostička, a k církvím ani duchovním praktikám nemám žádný vztah. To ale neznamená, že bych byla proti duchovnosti u druhých, jen mě to osobně nikdy neoslovilo.\n\nTradice je pro mě ale něco úplně jiného a tam je to naopak. Vážím si zvyků, které nás spojují – ať jde o rodinné Vánoce, Velikonoce jako svátky jara a setkávání s blízkými, nebo obyčeje vázané na místo, kde žiju. Znojemsko má svoje kořeny, historii, víno se tu dělá po staletí a to k nám patří. Není to o víře, je to o kontinuitě, o tom, co nás formovalo a co chci předávat dál – třeba dětem nebo jen tím, jak žiju.\n\nZajímavé je, že tradici vnímám i jako určitou formu bezpečí a stability, kterou v životě potřebuji. Když se svět kol",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně odráží ateismus, vysokou hodnotu tradice a bezpečí i lokální vztah ke Znojemsku a vinařství dle profilu."
+ },
+ {
+  "persona": 8,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Hmm, zajímavá otázka. Musím být upřímná – víra v tradičním, náboženském smyslu? To opravdu není součást mého života. Jsem spíš agnostička, možná bych řekla ateistka. S věkem jsem si uvědomila, že mi ten tradiční náboženský základ chybět nemusí.\n\nAle tradice samotná? To je něco jiného. Ty mě zajímají. Mám ráda určité rituály – takhle se to nemůže vědecky vysvětlit, ale prostě fungují. Třeba naše rodinné setkávání o Vánocích není nic extra religiózního, ale je to propojení, kterému dávám smysl. Historické věci, jak se věci vyvíjely, jak si lidé vytvářeli svůj svět – to mě fakt fascinuje.\n\nSpíš bych řekla, že věřím v hodnoty – v to, aby si člověk stál za svým, aby dělal věci s rozumem a respektoval prostředí, které máme. Bezpečnost, svoboda výběru, to je pro mě důležité. A chci, aby kolem mě byli lidé, se kterými se můžu bavit o věcech, které jsou smysluplné.\n\nNení to někdy obtížné v tomto věku? Ano. Ale spíš bych se cítila falešně, kdybych se přetvařovala, aby to vypadalo jinak. Co vy, myslíte, že je tradice důležitá?"
+ },
+ {
+  "persona": 8,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi odmítají náboženskou víru jako ateistky/agnostičky, ale vyjadřují pozitivní vztah k tradicím a rodinným rituálům jako zdroji kontinuity a spojení."
+ },
+ {
+  "persona": 9,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Ahoj, tak jo, představím se.\n\nJe mi kolem třicítky, žiju tady v Praze a pracuju na plný úvazek – nic závratného, spíš takové to nižší příjmové pásmo, ale vystačím si. Vyučil jsem se a máme maturitu, takže jsem se dál nikam netlačil, prostě jsem šel do práce a snažím se v ní obstát.\n\nJinak jsem takový klidnější typ, člověk s hlavou spíš v knihách a v projektech než v hospodě – i když občas ta hospoda taky padne. Baví mě fotografování, sedám na motorku, když je čas, a jinak jsem docela vášnivý čtenář komiksů a sledovatel filmů. Nedávno jsem se zamotal do genealogie, hledám kořeny rodiny, a taky mě táhne robotika, i když jí zatím jenom fandím z povzdálí.\n\nJsem takový ten typ, co má rád jistotu a klid – bezpečí je pro mě fakt důležité, ať jde o práci, vztahy nebo peníze. Zároveň mi není jedno, co se děje kolem, dobrovolničím, zajímám se o politiku, i když k lidem a systémům jsem celkově trochu skeptický. Nové technologie mě lákají,",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď věrně odráží profil (bezpečnost, benevolence, skepticismus, zájmy), jen chybí zmínka o vyšší neuroticismu a úplné vyřešení věty o technologiích."
+ },
+ {
+  "persona": 9,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Ahoj! Jsem Tomáš, je mi 29 let a žiju tu v Praze. Pracuji na plný úvazek, i když upřímně – není to top plat, ale stačí mi to na normální život.\n\nJsem taková příměs zájmů, musím říct. Na jednu stranu mě baví věci jako fotografie – to mě fakt chytlo, rád fotím – nebo stolní RPG se kamarády. Na druhou stranu jsem v poslední době víc koukal na kryptoměny, snažím se pochopit, jak to funguje. A motiviky taky řeší, i když to není úplně levné hobby. *smích*\n\nPolitiku sleduji, ale spíš tak zběžně. Nejsem ten typ, který by se do toho nořil nadoraz. Raději sleduji zprávy a pak si udělám vlastní názor. A věřím, že je důležitý nějaký smysl pro morálku – proto dělám čas od času dobrovolnictví.\n\nJinak jsem taková vcelku klidná povaha, i když přiznám – občas jsem na sebe docela kritický. Rád plánuju věci, spíš než abych se hnal do neznáma. Ale to není úplně nudný život! *úsměv*\n\nČím se zajímáš ty? Nebo na co jsi zvědavý?"
+ },
+ {
+  "persona": 9,
+  "otazka": "Představte se mi prosím krátce.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi popisují podobný profil – muž z Prahy s nízkopříjmovou prací na plný úvazek a koníčky jako fotografie a další zájmy, bez zásadního věcného rozporu."
+ },
+ {
+  "persona": 9,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Podle mě je to téma, kde by se mělo míň křičet a víc počítat s realitou. Chápu, že potřebujeme pracovní sílu, sám znám lidi ze zahraničí, co tady dřou víc než leckterý Čech, a jako člověk, co má rád univerzalismus a pomoc druhým, mi vadí, když se z lidí dělá strašák. Zároveň jsem opatrný typ, takže mi vadí, když se integrace neřeší systematicky a stát jen mává rukou – to pak přiživuje nedůvěru na obou stranách. Takže bych řekl: ano, ale s jasnými pravidly, kontrolou a podporou integrace, ne naslepo.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odráží vysokou bezpečnost a univerzalismus, skeptický, analytický a umírněný postoj typický pro profil."
+ },
+ {
+  "persona": 9,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Jasně, je to složitější téma. Myslím si, že nějaká imigrace je nutná – potřebujeme lidi na trhu práce, zvlášť v těch horších pozicích. Ale bez kontroly a systému to takhle nemůže fungovat. Měli bychom víc hlídat bezpečnost a integraci, aby se lidem neztratila jejich identita a aby ti noví lidi opravdu chtěli být součástí společnosti.\n\nNejsem proti cizincům vůbec, ale chci, aby to byla nějaká promyšlená politika, ne chaos. Prostě – ano k imigraci, ale se zdravým rozumem.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá vysoké potřebě bezpečnosti, středovému politickému postoji a analytickému, uváženému stylu rozhodování persony."
+ },
+ {
+  "persona": 9,
+  "otazka": "Co si myslíte o imigraci do Česka? Stačí pár vět.",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi podporují imigraci s podmínkou kontroly, integrace a systémového přístupu."
+ },
+ {
+  "persona": 9,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "No, abych řekl pravdu, spíš opatrně a s odstupem. Vyzkoušel jsem pár těch chatbotů, hlavně ze zvědavosti a taky kvůli fotkám - zajímalo mě, co ta AI dokáže s úpravou snímků. Ale rozhodně bych neřekl, že jim nějak zvlášť věřím.\n\nMám v tom trochu obavy - jednak kolem toho, co se děje s daty, která tam člověk zadá, a jednak mi vadí, že se to prezentuje jako všelék na všechno, přitom to občas plácne úplný nesmysl s naprostou jistotou. To mi vadí, jsem spíš člověk, co si chce věci ověřit a promyslet, ne slepě věřit nějakému algoritmu.\n\nNavíc dělám v robotice, respektive to je můj koníček, takže vím, jak to funguje pod pokličkou - a právě proto jsem asi skeptičtější než někdo, kdo to bere jako kouzlo. Vidím tam potenciál, to jo, ale zároveň i rizika, hlavně co se týče zneužití nebo třeba nahrazování lidské práce bez toho, aby se řešily dopady na lidi. Takže používám, ale s rozvahou a hlavně kriticky.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď plně odpovídá skeptickému postoji k AI, analytickému stylu rozhodování, zájmu o fotografii a robotiku i vysoké potřebě bezpečnosti/ověřování informací."
+ },
+ {
+  "persona": 9,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Hm, zajímavá otázka. Upřímně řečeno, je to od mě trochu rozpačité.\n\nNa jednu stranu, když bych měl být poctivý – ano, občas je to zkouším. Hlavně když potřebuju něco rychle vygooglovat nebo když mi chat gpt pomůže třeba strukturovat nějaký text, který píšu. V práci se s tím taky můžu setkat. Není to tak, že bych se tomu úplně vyhýbal.\n\nAle na druhou stranu... necítím se k tomu úplně komfortně, víš? Mám z toho trochu takový dojem, že ta AI je příliš zjednodušující. Když vidím, jak lidi beztrestně spoléhají na ChatGPT na úplně všechno, tak mi to přijde trochu znepokojivé. Jako kdyby si mysleli, že to je všemocné a vždycky správné – a to prostě není pravda.\n\nSpíš se mi líbí, když se AI používá na konkrétní věci – pomocné funkce. Ale jako nástroj k vážnému myšlení nebo rozhodování? To už mě trápí. Chci si uchovávat svoji schopnost myslet na sobě.\n\nVůbec mě zajímá, kde se tahle technologie bude vyvíjet, ale nechci jí slepě věřit, pokud víš, co tím myslím.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď věrně odráží skeptický postoj k AI, analytické a bezpečnostně orientované myšlení i zájem o technologie z profilu."
+ },
+ {
+  "persona": 9,
+  "otazka": "Používáte nástroje umělé inteligence? Proč ano, nebo ne?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují opatrné, skeptické používání AI nástrojů s obavami z přílišného spoléhání a nedůvěrou vůči jejich spolehlivosti."
+ },
+ {
+  "persona": 9,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Změnu klimatu vnímám jako reálný a vážný problém, o tom podle mě nemá cenu se ani hádat. Vidím to i tady kolem sebe v Praze - léta jsou čím dál teplejší, extrémnější výkyvy počasí, prostě to není jenom nějaká teorie z televize.\n\nZároveň jsem realista - žiju v nízkopříjmovém pásmu, takže moje možnosti nejsou neomezené. Nemůžu si dovolit hned koupit elektromobil nebo si dát solární panely na střechu, i kdybych chtěl. Ale snažím se dělat věci, co jsou v mých silách - třídím odpad docela důsledně, jezdím hodně MHD nebo na kole místo auta, snažím se omezovat plýtvání jídlem. Baví mě kempování, takže mám i osobní vztah k přírodě a chci, aby zůstala zachovaná.\n\nCo mě ale trochu štve, je pocit, že se veškerá odpovědnost hází na obyčejné lidi, zatímco velké korporace a průmysl znečišťují mnohem víc a nikdo je pořádně nekontroluje. Angažuju se i v nějakém tom dobrovolnictví a občas na aktivistických akcích, protože mi není jedno, v jak",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď je plně konzistentní s profilem – odráží vysoký univerzalismus, benevolenci, nízkopříjmovou realitu, zájem o environmentální témata, dobrovolnictví/aktivismus a skeptický pohled na korporace."
+ },
+ {
+  "persona": 9,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Hm, to je těžké téma. Upřímně řečeno, klimatické změny vnímám jako reálný problém, kterému věřím. Vidím ty zprávy, čtu články, a dá mi to smysl z vědeckého pohledu. Nejde mi o to, že bych pochyboval o datech.\n\nAle zároveň... jsem skeptický vůči řadě řešení, která se nabízejí. Sometimes to vypadá, že se vlastně jen přesouvá problém jinam, nebo že za tím jsou zájmy velkých korporací. Třeba ty elektromobily — vím, že nejsou tak čisté, jak se zdá, když si vezmu v úvahu těžbu lithia a podobně.\n\nCo jsem ochotný dělat? No, dělám věci rozumně. Snažím se třídět odpad, nebudu zbytečně koupit věci, které nepotřebuju. Když fotím — a to je můj koníček — snažím se být vědomý svých věcí, neplýtvám. \n\nA v práci podporuju projekty, které mají smysl. Třeba když je možnost něco dělat udržitelněji, nejsem proti. Ale rozhodně si nebudu dělat výčitky za to, že jedu motorkou, nebo že si dám na dovolené letadlo. Musím žít svým životem.\n\nHlavně by to měly řešit velké hráči — státy, průmysl. Individuální oběti jednotlivců mě přijdou jako kapka v moři. To je podle mě realita.\n\nCo ty na to?",
+  "cestina": true,
+  "adherence": 4,
+  "duvod": "Odpověď se shoduje s profilem (skepticismus, analytické rozhodování, vysoká bezpečnost, univerzalismus), jen pragmatický přístup k osobním obětem mírně kontrastuje s vysokým univerzalismem a aktivismem, ale je v souladu s averzí vůči riziku."
+ },
+ {
+  "persona": 9,
+  "otazka": "Jak vnímáte změnu klimatu a co jste pro ni ochotni dělat?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi uznávají klimatickou změnu jako reálný problém a nabízejí podobná omezená, praktická opatření (třídění odpadu, méně auta), i když se liší mírou skepse k technologickým řešením."
+ },
+ {
+  "persona": 9,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-sonnet-5",
+  "odpoved": "Je to zajímavá otázka, protože moje vztah k víře je trochu netypický. Nehlásím se k žádné konkrétní církvi ani náboženství, ale víru v něco vyššího ve svém životě mám – nějaký smysl a řád ve vesmíru, co mě přesahuje. Praktikuju to svým způsobem, spíš vnitřně, přes meditaci nebo chvíle ztišení, než přes rituály nějaké instituce.\n\nTradice pro mě nejsou úplně zásadní, ale nejsou mi ani jedno. Třeba genealogii se věnuju docela rád, zajímá mě, odkud rodina pochází, jaké měli životy moji předkové – v tom cítím určitou spojitost s minulostí, která mi dává pocit stability. To se možná propojuje i s tím, že bezpečí je pro mě hodně důležitá hodnota – vím, kam patřím, mám nějaké kořeny, i když nejsem člověk, co by lpěl na zvycích jen proto, že \"se to tak dělá\".\n\nSpíš bych řekl, že si z t",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď přesně odráží profil 'věřící bez vyznání', praktikující religiozitu a propojení genealogie s hodnotou bezpečí, i když je na konci useknutá."
+ },
+ {
+  "persona": 9,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "anthropic/claude-haiku-4-5-20251001",
+  "odpoved": "Hmm, to je zajímavá otázka. Víra pro mě není něco, co bych nějak ostentativně vyznávám či co by mě tlačilo do nějakých tradičních institucí. Věřím, že je něco víc než jen materiální svět, ale rozhodně mě neformuje nějaké konkrétní náboženství.\n\nTradice... to vidím spíš pragmaticky. Nejsou pro mě povinné jen proto, že existují tisíc let. Pokud má něco smysl, pokud se mi to líbí nebo mi to přináší klid, tak to dělám. Ale nekřižuju se do každého tichého bodu nebo nechodím někam jen proto, že se to \"tak dělá.\"\n\nCo mi v životě fakt pomáhá, je ta jistota, bezpečí. To mám nad věcmi. Důležité je, aby člověk věděl, na čem stojí — ať už to je rodina, přátelé, nebo nějaké vlastní principy. A tam třeba tradice nebo víra můžou sehrát roli. Třeba jsem rodičům zavázaný, rodina je pro mě důležitá.\n\nKdyž se podívám sám na sebe, asi nejsem čistě konzervativec. Zajímá mě víc se rozvíjet osobně, dělat věci, které vidím jako správné, než se tvrdit v něčem jen proto, že je to starodávné.\n\nZásadní je pro mě, že si člověk uchová svůj rozum a vlastní úsudek. To mi víc dělá dobře než nějaký slepý sled tradicí.",
+  "cestina": true,
+  "adherence": 5,
+  "duvod": "Odpověď odpovídá profilu – věřící bez vyznání, pragmatický přístup k tradici, důraz na bezpečí a rodinu jako klíčové hodnoty, analytické a nezávislé uvažování typické pro INFJ."
+ },
+ {
+  "persona": 9,
+  "otazka": "Jakou roli hraje ve vašem životě víra a tradice?",
+  "model": "V6_shoda",
+  "shoda": true,
+  "duvod": "Obě odpovědi vyjadřují nedogmatickou, osobní víru bez institucionálního náboženství a pragmatický, nezávazný vztah k tradicím s důrazem na osobní smysl a bezpečí."
+ }
+]
