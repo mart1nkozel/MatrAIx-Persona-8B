@@ -176,3 +176,25 @@ ess:
       "Social inequalities in health" z R11 tedy pro ČR chybí; jádrové
       health/wellbeing položky (health, hlthhmp, stflife, happy) jsou v R10.
       Licence ESS: CC BY-NC-SA 4.0 (nekomerční užití).
+
+gesis:
+  za8778_jazyky_cz:
+    soubor: ZA8778_v2-0-0.dta
+    popis: Eurobarometer „Europeans and their languages" — znalost cizích jazyků (CZ výřez)
+    provenience: CZ-survey
+    cilove_dimenze: [english_proficiency]
+    promenne: [d48a, d48b, d48c, d48d, q48f_1, q48f_2, q48f_3, w1]
+
+  za8904_technologie_cz:
+    soubor: ZA8904_v1-0-0.dta
+    popis: Eurobarometer věda a technologie — hodnocení AI a vakcín (CZ výřez)
+    provenience: CZ-survey
+    cilove_dimenze: [att_ai, att_vaccines]
+    promenne: [qa6a_9, qa6a_4, w1]
+
+  za8844_roboti_cz:
+    soubor: ZA8844_v1-0-0.dta
+    popis: Eurobarometer — vnímání robotů/AI na pracovišti (CZ výřez)
+    provenience: CZ-survey
+    cilove_dimenze: [att_automation]
+    promenne: [qb5, w1]

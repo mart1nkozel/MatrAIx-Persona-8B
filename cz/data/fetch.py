@@ -14,7 +14,7 @@ from pathlib import Path
 
 import yaml
 
-from cz.data import csu, ess, eurostat
+from cz.data import csu, ess, eurostat, gesis
 from cz.data.snapshots import SnapshotStore, query_hash
 
 SOURCES_PATH = Path(__file__).resolve().parent / "sources.yaml"
@@ -134,6 +134,48 @@ def main() -> int:
                                      "cache_key": cache_key, "origin": "download",
                                      "bytes": len(data), "sha256": file_sha256(cil)}
         print(f"→ staženo ({len(data)} B)")
+
+
+    for source_id, src in (registry.get("gesis") or {}).items():
+        if not chci(source_id):
+            continue
+        try:
+            znacka = gesis.zdrojova_znacka(src["soubor"])
+        except (OSError, gesis.GesisError) as e:
+            chyby[source_id] = str(e)
+            print(f"[gesis] {source_id}: CHYBA {e}")
+            continue
+        cache_key = f"gesis:{src['soubor']}:{znacka}:{','.join(src['promenne'])}"
+        print(f"[gesis] {source_id}: {src['soubor']}", end=" ")
+        if args.dry_run:
+            print(f"(dry-run, cache_key={cache_key})")
+            continue
+        meta = {"zdroj": "gesis-local", "soubor": src["soubor"], "popis": src.get("popis"),
+                "provenience": src.get("provenience"), "cilove_dimenze": src.get("cilove_dimenze")}
+        cached = writer.cached(source_id, cache_key)
+        if cached is not None:
+            import shutil as _sh
+            cil = writer.dir / f"{source_id}.parquet"
+            _sh.copyfile(cached, cil)
+            writer.sources[source_id] = {**meta, "file": f"{source_id}.parquet",
+                                         "cache_key": cache_key, "origin": "cache",
+                                         "bytes": cil.stat().st_size}
+            print("→ cache")
+            continue
+        try:
+            data = gesis.extract_cz(src["soubor"], src["promenne"],
+                                    src.get("zeme_var", "isocntry"), src.get("zeme", "CZ"))
+        except gesis.GesisError as e:
+            chyby[source_id] = str(e)
+            print(f"→ CHYBA: {e}")
+            continue
+        cil = writer.dir / f"{source_id}.parquet"
+        cil.write_bytes(data)
+        from cz.data.snapshots import file_sha256 as _sha
+        writer.sources[source_id] = {**meta, "file": f"{source_id}.parquet",
+                                     "cache_key": cache_key, "origin": "download",
+                                     "bytes": len(data), "sha256": _sha(cil)}
+        print(f"→ extrahováno ({len(data)} B)")
 
     if args.dry_run:
         return 0

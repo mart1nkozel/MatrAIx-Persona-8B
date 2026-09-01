@@ -329,6 +329,8 @@ def main() -> None:
     schema_values = {n["id"]: n["values"] for n in dag["nodes"]}
     ess_res = ess_mapping.build_ess_priors(
         sdir, schema_values, nodes["demo_disability_status"]["prior"])
+    from cz.graph import gesis_mapping
+    ess_res.update(gesis_mapping.build_gesis_priors(sdir, schema_values))
 
     ess_dims = set(ess_res)
     # světové in-hrany a CPT na CZ-survey kalibrované uzly pryč (jinak by

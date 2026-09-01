@@ -29,7 +29,7 @@ def _jen_dospeli(nid: str, info: dict) -> bool:
     if nid in JEN_DOSPELI:
         return True
     zdroj = str((info.get("provenance") or {}).get("zdroj", ""))
-    return zdroj.startswith("ess10")
+    return zdroj.startswith(("ess10", "gesis:"))
 
 
 def main() -> int:
