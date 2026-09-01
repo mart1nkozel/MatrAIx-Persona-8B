@@ -40,7 +40,11 @@ def extract_cz(
     if not cesta.exists():
         raise GesisError(f"Soubor {cesta} neexistuje — zkontroluj GESIS_DIR")
     cols = list(dict.fromkeys(promenne + [zeme_var]))
-    df = pd.read_stata(cesta, columns=cols, convert_categoricals=False)
+    if cesta.suffix == ".sav":
+        import pyreadstat
+        df, _ = pyreadstat.read_sav(str(cesta), usecols=cols)
+    else:
+        df = pd.read_stata(cesta, columns=cols, convert_categoricals=False)
     sub = df[df[zeme_var].astype(str).str.strip() == zeme]
     if sub.empty:
         raise GesisError(f"{soubor}: {zeme_var}=={zeme} nemá žádné řádky "

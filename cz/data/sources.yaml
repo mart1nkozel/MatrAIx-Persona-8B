@@ -198,3 +198,43 @@ gesis:
     provenience: CZ-survey
     cilove_dimenze: [att_automation]
     promenne: [qb5, w1]
+
+  # --- vlna 2 (plná šířka) ---
+
+  za7505_evs_cz:
+    soubor: rozbalene/ZA7505_v5-0-0.sav
+    popis: EVS/WVS trend — hodnoty (important in life), trh vs. stát, národní hrdost (CZ, poslední vlna)
+    provenience: CZ-survey
+    cilove_dimenze: [val_family, val_community, val_fun_enjoyment, val_career_success, val_spirituality_faith, val_patriotism, att_free_markets]
+    zeme_var: cntry_AN
+    promenne: [A001, A002, A003, A005, A006, G006, E036, E037, wave, year, gwght]
+
+  za10000_issp_gender_cz:
+    soubor: rozbalene/ZA10000_v2-0-0.dta
+    popis: ISSP 2022 Family and Changing Gender Roles — tradiční role (CZ)
+    provenience: CZ-survey
+    cilove_dimenze: [att_traditional_gender_roles]
+    zeme_var: c_alphan
+    promenne: [v1, v2, v3, v6, DWEIGHT_HH, DWEIGHT_TS]
+
+  za7600_issp_inequality_cz:
+    soubor: rozbalene/ZA7600_v3-0-0.dta
+    popis: ISSP Social Inequality — odpovědnost vlády za snižování rozdílů (CZ)
+    provenience: CZ-survey
+    cilove_dimenze: [att_government_regulation]
+    zeme_var: c_alphan
+    promenne: [v22, v24, WEIGHT]
+
+  za8929_ai_platformy_cz:
+    soubor: ZA8929_v1-0-0.dta
+    popis: EB — používání AI aplikací a sociálních platforem (CZ)
+    provenience: CZ-survey
+    cilove_dimenze: [lstyle_primary_social]
+    promenne: [q8_1, q8_2, q8_3, q8_4, q8_5, q8_6, q8_7, q8_8, q8_9, q8_10, q8_11, q8_12, q12, w1]
+
+  za9127_klima_cz:
+    soubor: ZA9127_v1-0-0.dta
+    popis: Standard EB 2024 — klima způsobeno člověkem (sd1, CZ)
+    provenience: CZ-survey
+    cilove_dimenze: [att_climate_action]
+    promenne: [sd1, w1]

@@ -331,6 +331,7 @@ def main() -> None:
         sdir, schema_values, nodes["demo_disability_status"]["prior"])
     from cz.graph import gesis_mapping
     ess_res.update(gesis_mapping.build_gesis_priors(sdir, schema_values))
+    ess_res.update(gesis_mapping.build_gesis_wave2(sdir, schema_values))
 
     ess_dims = set(ess_res)
     # světové in-hrany a CPT na CZ-survey kalibrované uzly pryč (jinak by
