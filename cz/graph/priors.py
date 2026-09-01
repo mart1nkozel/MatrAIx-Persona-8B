@@ -416,3 +416,49 @@ def urbanicity_by_kraj(snapshot_dir: Path, hodnoty: list[str]) -> Tuple[Dict[str
                 "ne okresem — dvě persony ze stejného kraje a jiného okresu mají "
                 "identickou distribuci urbanicity (G7)",
     }
+
+
+# ------------------------------------- dovětek: domain z NACE zaměstnanosti
+
+# NACE sekce → hodnoty dimenze domain (proxy: struktura ZAMĚSTNANÝCH, dimenze
+# ale popisuje obor všech person vč. nepracujících — dokumentované zjednodušení;
+# J děleno 80/20 mezi IT a média, M je směs profesních služeb → Business)
+NACE_DO_DOMAIN = {
+    "A": [("Agriculture", 1.0)],
+    "B": [("Manufacturing", 1.0)], "C": [("Manufacturing", 1.0)],
+    "D": [("Engineering", 1.0)], "E": [("Engineering", 1.0)],
+    "F": [("Skilled Trades", 1.0)],
+    "G": [("Business & Management", 1.0)],
+    "H": [("Skilled Trades", 1.0)],
+    "I": [("Hospitality", 1.0)],
+    "J": [("Software & AI", 0.8), ("Media & Journalism", 0.2)],
+    "K": [("Finance & Economics", 1.0)],
+    "L": [("Business & Management", 1.0)],
+    "M": [("Business & Management", 0.6), ("Law & Policy", 0.2), ("Natural Sciences", 0.2)],
+    "N": [("Business & Management", 1.0)],
+    "O": [("Public Sector", 1.0)],
+    "P": [("Education", 1.0)],
+    "Q": [("Healthcare & Medicine", 1.0)],
+    "R": [("Arts & Humanities", 1.0)],
+    "S": [("Skilled Trades", 1.0)],
+}
+DOMAIN_PODLAHA = 0.005  # žádná hodnota nesmí klesnout na tvrdou nulu
+
+
+def domain_prior(snapshot_dir: Path, hodnoty: list[str]) -> Tuple[Prior, Prov]:
+    rows = _rows(snapshot_dir, "zamg07_nace")
+    prior = {h: 0.0 for h in hodnoty}
+    for r in rows:
+        kod = r["CZNACEMZDY.Polozka"]
+        if kod in NACE_DO_DOMAIN and r["Hodnota"]:
+            for cil, podil in NACE_DO_DOMAIN[kod]:
+                prior[cil] += podil * float(r["Hodnota"])
+    prior = _norm(prior)
+    prior = _norm({k: max(v, DOMAIN_PODLAHA) for k, v in prior.items()})
+    return prior, {
+        "zdroj": "csu:ZAMG07 CZNACEMZDY (VŠPS zaměstnaní podle odvětví)",
+        "evidence": "raw_direct+mapping_proxy",
+        "pozn": "struktura zaměstnaných aplikovaná na všechny persony; mapování "
+                "NACE→domain v NACE_DO_DOMAIN (J 80/20 IT/média, M rozděleno); "
+                "podlaha 0,5 % proti tvrdým nulám (Social Sciences bez NACE opory)",
+    }

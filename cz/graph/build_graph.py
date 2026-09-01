@@ -33,7 +33,7 @@ SNAPSHOTS = REPO / "cz" / "data" / "snapshots"
 VALUE_CHANGED = {"region", "primary_language"}
 PRIOR_ONLY = {
     "age_bracket", "gender_identity", "highest_education", "urbanicity",
-    "demo_employment_status", "socioeconomic_band",
+    "demo_employment_status", "socioeconomic_band", "domain",
 }
 
 
@@ -65,6 +65,7 @@ def main() -> None:
         "primary_language": priors.language_prior(sdir),
         "demo_employment_status": priors.employment_prior(sdir, nodes["demo_employment_status"]["values"]),
         "socioeconomic_band": priors.socioeconomic_prior(sdir, nodes["socioeconomic_band"]["values"]),
+        "domain": priors.domain_prior(sdir, nodes["domain"]["values"]),
     }
 
     report: dict = {"snapshot": sid, "nodes": {}, "suspended": {}}

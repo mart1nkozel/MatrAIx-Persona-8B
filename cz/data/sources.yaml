@@ -134,6 +134,18 @@ csu:
       pouzit_dimenze: [Vzdel1, VEKSK5A]
       fixovat_dimenze: {VelSkObciOP1: "0", POHL3: "0"}
 
+  zamg07_nace:
+    sada: ZAMG07
+    popis: Zaměstnaní podle odvětví CZ-NACE (VŠPS) — podklad pro domain prior
+    provenience: CZ-official
+    cilove_dimenze: [domain]
+    query:
+      uzemni_uroven: STAT
+      ukazatele: ["6285Z"]
+      posledni_obdobi: 1
+      pouzit_dimenze: [CZNACEMZDY]
+      fixovat_dimenze: {CZISCO: "C", VEKVSPS: "410015799999000", UKONVZDEL: "0", TYPPRACDO: "0", POHL1: "0"}
+
 eurostat:
   demo_r_pjangrp3_cz:
     dataset: demo_r_pjangrp3
