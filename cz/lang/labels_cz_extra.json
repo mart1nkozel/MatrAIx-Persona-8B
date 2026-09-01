@@ -1,0 +1,26 @@
+{
+ "region": {
+  "label": "Okres",
+  "values": {}
+ },
+ "cz_kraj": {
+  "label": "Kraj",
+  "values": {}
+ },
+ "primary_language": {
+  "label": "Mateřský jazyk",
+  "values": {
+   "Czech": "čeština",
+   "Slovak": "slovenština",
+   "Ukrainian": "ukrajinština",
+   "Vietnamese": "vietnamština",
+   "Russian": "ruština",
+   "Polish": "polština",
+   "German": "němčina",
+   "Romani": "romština",
+   "Hungarian": "maďarština",
+   "English": "angličtina",
+   "Other": "jiný"
+  }
+ }
+}
