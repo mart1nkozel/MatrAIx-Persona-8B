@@ -24,6 +24,7 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO))
 
 from cz.lang.render_cs import hodnota, label  # noqa: E402
+from cz.segmentace import ORDINALNI  # noqa: E402  (pořadí škál = pořadí hodnot ve schématu)
 
 BUILD_REPORT = Path(__file__).resolve().parent / "graph" / "build_report.json"
 POPULACE_CR = 10_909_500  # ČSÚ k 1. 1. 2025
@@ -114,7 +115,12 @@ def graf_dimenze(dim: str, recs: list[dict], info: dict, populace: int | None) -
     ref = info.get("reference_18plus") or info["prior"]
     cnt = Counter(r.get(dim) for r in recs)
     n = len(recs)
-    polozky = sorted(ref.items(), key=lambda kv: -kv[1])
+    # Ordinální škály drží postupnost škály (pořadí hodnot ve schématu),
+    # nominální kategorie se řadí podle zastoupení.
+    if dim in ORDINALNI:
+        polozky = list(ref.items())
+    else:
+        polozky = sorted(ref.items(), key=lambda kv: -kv[1])
     if len(polozky) > MAX_RADKU:
         top = polozky[:MAX_RADKU]
         zbytek_ref = sum(p for _, p in polozky[MAX_RADKU:])
