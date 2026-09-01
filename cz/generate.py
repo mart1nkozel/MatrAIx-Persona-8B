@@ -135,6 +135,7 @@ def main() -> int:
     ap.add_argument("--stratifikovat", help="dimenze pro rovnoměrné strata")
     ap.add_argument("--format", choices=["jsonl", "jsonl.gz", "codes"], default="jsonl.gz")
     ap.add_argument("--workers", type=int, default=4, help="jen pro nefiltrovaný codes běh")
+    ap.add_argument("--vstup-4d", type=Path, help="JSON z cz.vstup — propíše se do manifestu (F6)")
     args = ap.parse_args()
 
     t0 = time.time()
@@ -151,8 +152,14 @@ def main() -> int:
         sdim = args.stratifikovat
         if sdim not in sampler.nodes:
             raise SystemExit(f"Neznámá stratifikační dimenze: {sdim}")
+        # strata jen v průniku s případným filtrem na téže dimenzi — jinak by
+        # vznikla nesplnitelná kombinace (např. filtr věk 18-34 × stratum Under 5)
+        povolene = set(filtry.get(sdim, sampler.values[sdim]))
         for hodnota in sampler.values[sdim]:
-            sc, sz = dict(clampy), {k: set(v) for k, v in zbytek.items()}
+            if hodnota not in povolene:
+                continue
+            sc = {k: v for k, v in clampy.items() if k != sdim}
+            sz = {k: set(v) for k, v in zbytek.items() if k != sdim}
             sf = rozdel_filtry(sampler, {sdim: [hodnota]})
             sc.update(sf[0]); sz.update(sf[1])
             strata.append((f"{sdim}={hodnota}", sc, sz))
@@ -211,7 +218,7 @@ def main() -> int:
             "trvani_s": round(time.time() - t0, 1),
         },
         "vytvoreno": datetime.now(timezone.utc).isoformat(),
-        "vstupni_4d": None,  # vyplní vstupní vrstva ve Fázi 8 (F6)
+        "vstupni_4d": (json.loads(args.vstup_4d.read_text()) if args.vstup_4d else None),
     }
     (args.out / "manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=1), encoding="utf-8")
