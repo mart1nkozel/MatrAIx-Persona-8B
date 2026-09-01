@@ -22,5 +22,338 @@
    "English": "angličtina",
    "Other": "jiný"
   }
+ },
+ "schwartz_value_self_direction": {
+  "label": "Samostatnost",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "schwartz_value_stimulation": {
+  "label": "Chuť zkoušet nové",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "schwartz_value_hedonism": {
+  "label": "Užívání si života",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "schwartz_value_achievement": {
+  "label": "Ctižádost",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "schwartz_value_power": {
+  "label": "Moc a status",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "schwartz_value_security": {
+  "label": "Potřeba jistoty",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "schwartz_value_conformity": {
+  "label": "Přizpůsobivost",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "schwartz_value_tradition": {
+  "label": "Tradice",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "schwartz_value_benevolence": {
+  "label": "Laskavost k blízkým",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "schwartz_value_universalism": {
+  "label": "Rovnost a tolerance",
+  "values": {
+   "Very high": "Velmi silná",
+   "High": "Silná",
+   "Average": "Průměrná",
+   "Low": "Slabá",
+   "Very low": "Velmi slabá"
+  }
+ },
+ "val_family": {
+  "label": "Důležitost rodiny",
+  "values": {
+   "Core value": "Zásadní",
+   "Important": "Důležité",
+   "Moderate": "Střední",
+   "Minor": "Okrajové",
+   "Irrelevant": "Nedůležité"
+  }
+ },
+ "val_community": {
+  "label": "Důležitost přátel",
+  "values": {
+   "Core value": "Zásadní",
+   "Important": "Důležité",
+   "Moderate": "Střední",
+   "Minor": "Okrajové",
+   "Irrelevant": "Nedůležité"
+  }
+ },
+ "val_fun_enjoyment": {
+  "label": "Důležitost volného času",
+  "values": {
+   "Core value": "Zásadní",
+   "Important": "Důležité",
+   "Moderate": "Střední",
+   "Minor": "Okrajové",
+   "Irrelevant": "Nedůležité"
+  }
+ },
+ "val_career_success": {
+  "label": "Důležitost práce",
+  "values": {
+   "Core value": "Zásadní",
+   "Important": "Důležité",
+   "Moderate": "Střední",
+   "Minor": "Okrajové",
+   "Irrelevant": "Nedůležité"
+  }
+ },
+ "val_spirituality_faith": {
+  "label": "Důležitost víry",
+  "values": {
+   "Core value": "Zásadní",
+   "Important": "Důležité",
+   "Moderate": "Střední",
+   "Minor": "Okrajové",
+   "Irrelevant": "Nedůležité"
+  }
+ },
+ "val_patriotism": {
+  "label": "Národní hrdost",
+  "values": {
+   "Core value": "Zásadní",
+   "Important": "Důležité",
+   "Moderate": "Střední",
+   "Minor": "Okrajové",
+   "Irrelevant": "Nedůležité"
+  }
+ },
+ "att_immigration": {
+  "label": "Postoj k imigraci",
+  "values": {
+   "Enthusiast": "Rozhodně pro",
+   "Positive": "Spíš pro",
+   "Neutral": "Neutrální",
+   "Skeptical": "Spíš proti",
+   "Opposed": "Rozhodně proti"
+  }
+ },
+ "att_ai": {
+  "label": "Postoj k umělé inteligenci",
+  "values": {
+   "Enthusiast": "Rozhodně pro",
+   "Positive": "Spíš pro",
+   "Neutral": "Neutrální",
+   "Skeptical": "Spíš proti",
+   "Opposed": "Rozhodně proti"
+  }
+ },
+ "att_vaccines": {
+  "label": "Postoj k očkování",
+  "values": {
+   "Enthusiast": "Rozhodně pro",
+   "Positive": "Spíš pro",
+   "Neutral": "Neutrální",
+   "Skeptical": "Spíš proti",
+   "Opposed": "Rozhodně proti"
+  }
+ },
+ "att_automation": {
+  "label": "Postoj k robotům v práci",
+  "values": {
+   "Enthusiast": "Rozhodně pro",
+   "Positive": "Spíš pro",
+   "Neutral": "Neutrální",
+   "Skeptical": "Spíš proti",
+   "Opposed": "Rozhodně proti"
+  }
+ },
+ "att_climate_action": {
+  "label": "Postoj ke změně klimatu",
+  "values": {
+   "Enthusiast": "Rozhodně pro",
+   "Positive": "Spíš pro",
+   "Neutral": "Neutrální",
+   "Skeptical": "Spíš proti",
+   "Opposed": "Rozhodně proti"
+  }
+ },
+ "att_free_markets": {
+  "label": "Postoj k volnému trhu",
+  "values": {
+   "Enthusiast": "Rozhodně pro",
+   "Positive": "Spíš pro",
+   "Neutral": "Neutrální",
+   "Skeptical": "Spíš proti",
+   "Opposed": "Rozhodně proti"
+  }
+ },
+ "att_government_regulation": {
+  "label": "Role státu v ekonomice",
+  "values": {
+   "Enthusiast": "Rozhodně pro",
+   "Positive": "Spíš pro",
+   "Neutral": "Neutrální",
+   "Skeptical": "Spíš proti",
+   "Opposed": "Rozhodně proti"
+  }
+ },
+ "att_traditional_gender_roles": {
+  "label": "Tradiční role muže a ženy",
+  "values": {
+   "Enthusiast": "Rozhodně pro",
+   "Positive": "Spíš pro",
+   "Neutral": "Neutrální",
+   "Skeptical": "Spíš proti",
+   "Opposed": "Rozhodně proti"
+  }
+ },
+ "trust_level": {
+  "label": "Důvěra k lidem",
+  "values": {
+   "Trusting": "Důvěřivý",
+   "Verifying": "Spíš důvěřivý",
+   "Skeptical": "Spíš nedůvěřivý",
+   "Hostile": "Nedůvěřivý"
+  }
+ },
+ "age_bracket": {
+  "label": "Věk",
+  "values": {}
+ },
+ "highest_education": {
+  "label": "Vzdělání",
+  "values": {}
+ },
+ "demo_employment_status": {
+  "label": "Ekonomická aktivita",
+  "values": {}
+ },
+ "socioeconomic_band": {
+  "label": "Příjmová skupina",
+  "values": {}
+ },
+ "urbanicity": {
+  "label": "Typ bydliště",
+  "values": {}
+ },
+ "gender_identity": {
+  "label": "Pohlaví",
+  "values": {}
+ },
+ "english_proficiency": {
+  "label": "Angličtina",
+  "values": {}
+ },
+ "political_lean": {
+  "label": "Politické zaměření",
+  "values": {}
+ },
+ "demo_political_engagement": {
+  "label": "Vztah k volbám",
+  "values": {}
+ },
+ "topic_politics": {
+  "label": "Zájem o politiku",
+  "values": {}
+ },
+ "religiosity": {
+  "label": "Víra",
+  "values": {}
+ },
+ "demo_religion_affiliation": {
+  "label": "Vyznání",
+  "values": {}
+ },
+ "tech_savviness": {
+  "label": "Vztah k technologiím",
+  "values": {}
+ },
+ "lstyle_primary_social": {
+  "label": "Hlavní sociální síť",
+  "values": {}
+ },
+ "lstyle_social_battery": {
+  "label": "Společenskost",
+  "values": {}
+ },
+ "health_general_health": {
+  "label": "Zdraví",
+  "values": {}
+ },
+ "health_mental_health": {
+  "label": "Duševní pohoda",
+  "values": {}
+ },
+ "health_mobility": {
+  "label": "Pohyblivost",
+  "values": {}
+ },
+ "demo_disability_status": {
+  "label": "Zdravotní omezení",
+  "values": {}
+ },
+ "cog_optimism": {
+  "label": "Optimismus",
+  "values": {}
+ },
+ "domain": {
+  "label": "Obor",
+  "values": {}
  }
 }

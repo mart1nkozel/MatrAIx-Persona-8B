@@ -168,7 +168,29 @@ def main() -> int:
 
     vysledky = []
     soubory = []
-    if not filtry and not args.stratifikovat and args.format == "codes":
+    if not filtry and not args.stratifikovat and args.format.startswith("jsonl"):
+        # nefiltrovaný jsonl deleguj na paralelní sampler (jinak by 100k+ trvalo desítky minut)
+        tmp = args.out / "kohorta_vse.jsonl"
+        sample_to_file_parallel(args.graph, n=args.n, out=tmp, fmt="jsonl",
+                                seed=args.seed, workers=args.workers)
+        cil = tmp
+        if args.format == "jsonl.gz":
+            import shutil, subprocess
+            cil = args.out / "kohorta_vse.jsonl.gz"
+            if shutil.which("gzip"):
+                # -n = bez jména a časového razítka v hlavičce (determinismus)
+                subprocess.run(["gzip", "-n", "-f", str(tmp)], check=True)
+            else:
+                with tmp.open("rb") as fin, cil.open("wb") as raw:
+                    gz = gzip.GzipFile(filename="", mode="wb", fileobj=raw, mtime=0)
+                    while blok := fin.read(1 << 20):
+                        gz.write(blok)
+                    gz.close()
+                tmp.unlink()
+        vysledky.append({"stratum": "vse", "prijato": args.n,
+                         "delegovano": "sample_to_file_parallel", "workers": args.workers})
+        soubory.append(cil)
+    elif not filtry and not args.stratifikovat and args.format == "codes":
         out_file = args.out / "kohorta.codes"
         meta = sample_to_file_parallel(
             args.graph, n=args.n, out=out_file, fmt="codes",

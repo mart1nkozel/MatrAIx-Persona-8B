@@ -68,7 +68,8 @@ MIMO_SKALU = {"political_lean": {"Apolitical"}, "religiosity": {"Prefer not to s
               "gender_identity": set(), "urbanicity": {"Nomadic / remote"}}
 
 
-def nacti_kohortu(kohorta: Path) -> list[dict]:
+def nacti_kohortu(kohorta: Path, dimenze: list[str] | None = None) -> list[dict]:
+    """Streamované čtení; s `dimenze` drží v paměti jen projekci (velké kohorty)."""
     soubory = sorted(list(kohorta.glob("*.jsonl.gz")) + list(kohorta.glob("*.jsonl")))
     if not soubory:
         raise SystemExit(f"V {kohorta} není jsonl — segmentace potřebuje formát jsonl(.gz)")
@@ -76,8 +77,26 @@ def nacti_kohortu(kohorta: Path) -> list[dict]:
     for f in soubory:
         otevrit = gzip.open if f.suffix == ".gz" else open
         with otevrit(f, "rt", encoding="utf-8") as fh:
-            recs.extend(json.loads(l) for l in fh)
+            for l in fh:
+                r = json.loads(l)
+                recs.append({d: r.get(d) for d in dimenze} if dimenze else r)
     return recs
+
+
+def nacti_zaznamy_podle_indexu(kohorta: Path, indexy: set[int]) -> dict[int, dict]:
+    soubory = sorted(list(kohorta.glob("*.jsonl.gz")) + list(kohorta.glob("*.jsonl")))
+    out: dict[int, dict] = {}
+    i = 0
+    for f in soubory:
+        otevrit = gzip.open if f.suffix == ".gz" else open
+        with otevrit(f, "rt", encoding="utf-8") as fh:
+            for l in fh:
+                if i in indexy:
+                    out[i] = json.loads(l)
+                    if len(out) == len(indexy):
+                        return out
+                i += 1
+    return out
 
 
 def zakoduj(recs: list[dict], dimenze: list[str], hodnoty: dict) -> tuple[np.ndarray, list[str]]:
@@ -210,7 +229,9 @@ def main() -> int:
     else:
         dimenze = JADROVE_OSY
 
-    recs = nacti_kohortu(args.kohorta)
+    popisne = ["gender_identity", "age_bracket", "region", "highest_education",
+               "demo_employment_status"]
+    recs = nacti_kohortu(args.kohorta, dimenze=sorted(set(dimenze) | set(popisne)))
     print(f"kohorta: {len(recs):,} person")
     X, pouzite = zakoduj(recs, dimenze, hodnoty)
     maska = np.array([d in ORDINALNI for d in pouzite])
@@ -228,6 +249,7 @@ def main() -> int:
     labels_full = gower_k_medoidum(X, X[medoid_global], maska).argmin(axis=1)
     print(f"k={args.k}, silueta {sil:.3f}")
 
+    plne_medoidy = nacti_zaznamy_podle_indexu(args.kohorta, {int(m) for m in medoid_global})
     segmenty = []
     for c in range(args.k):
         podil = float((labels_full == c).mean())
@@ -236,7 +258,7 @@ def main() -> int:
             "podil": round(podil, 4),
             "n": int((labels_full == c).sum()),
             "medoid_index": int(medoid_global[c]),
-            "medoid": recs[medoid_global[c]],
+            "medoid": plne_medoidy.get(int(medoid_global[c]), recs[medoid_global[c]]),
             "odlisujici_rysy": odlisujici_rysy(recs, labels_full, c, pouzite),
         })
         print(f"  segment {c}: {podil:.1%} (medoid #{medoid_global[c]})")
